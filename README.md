@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/image-one.jpg" width="375px" alt="Homepage van stussy.com">
+  <img src="readme-images/image-one.png" width="375px" alt="Homepage van stussy.com">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/image-two.jpg" width="375px" alt="Productpagina van stussy.com">
+  <img src="readme-images/image-two.png" width="375px" alt="Productpagina van stussy.com">
  
 </details>
 

@@ -57,7 +57,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  <ul>
+    <li>De headings hebben een logische volgorde.</li>
+    <li>Accessibility wordt pas laat verteld, dit kan anders.</li>
+    <li>Links hebben een goede beschrijving over de bestemming.</li>
+    <li>Voor screenreaders is het onduidelijk dat er onder shop meerdere subcategoriëen zijn. Hetzeflde geldt voor customer service.</li>
+    <li>Focus punten op de site kan worden verbeterd.</li>
+    <li>De website werkt op alle oriëntaties.</li>
+    <li>Horizontale scrolls worden niet gebruikt.</li>
+    <li>Buttons kunnen misschien iets groter, voor mensen met motorische beperkingen.</li>
+    <li>Scroll ruimte is voldoende aanwezig.</li>
+    <li>Alt teksten zijn niet voldoende.</li>
+  </ul>
+  <img src="readme-images/cl1.jpg" width="375px" alt="Checklist accessibility page 1">
+  <img src="readme-images/cl2.jpg" width="375px" alt="Checklist accessibility page 2">
+  <img src="readme-images/cl3.jpg" width="375px" alt="Checklist accessibility page 3">
+  <img src="readme-images/cl4.jpg" width="375px" alt="Checklist accessibility page 4">
+  <img src="readme-images/cl5.jpg" width="375px" alt="Checklist accessibility page 5">
 </details>
 
 

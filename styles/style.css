@@ -3,7 +3,9 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;
-    
+	margin: 0;
+	padding: 0;
+	font-family: 'Albert Sans', sans-serif;
 }
 
 
@@ -28,5 +30,175 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+header{
+	height: 3.75em;
+	width: 100%;
+	border-bottom: 1px solid rgb(245 245 245);
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
 
+header>a {
+	margin-left: .625em;
+	display: flex;
+	height: 3.75em;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+}
+
+header>a:first-of-type img {
+	height: 2.5em;
+}
+
+header>ul {
+	list-style: none;
+	display: flex;
+}
+
+header>ul li {
+	height: 3.75em;
+	width: auto;
+}
+
+header>ul li button{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+}
+
+header>ul li button img {
+	height: 1.25em;
+	margin: 0 .625em;
+}
+
+header nav {
+	display: none;
+}
+
+main {
+	padding-top: 3.75em;
+}
+
+main section:first-of-type {
+	width: 100vw;
+	padding: .625em;
+	height: calc(100vh - 3.75em);
+	border-bottom: 1px solid rgb(245 245 245);
+}
+
+main section:first-of-type a {
+	text-decoration: none;
+}
+
+main section:first-of-type figure {
+	width: 100%;
+	height: calc(100% - 2.5em);
+	display: flex;
+}
+
+main section:first-of-type figure img {
+	object-fit: cover;
+	height: auto;
+	width: 100%;
+}
+
+main section:first-of-type a h1 {
+	background-color: black;
+	text-align: center;
+	padding-left: .625em;
+	padding-right: .625em;
+	font-size: 1em;
+	height: 2.5em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+main section:nth-of-type(2) {
+	padding-left: .625em;
+	padding-right:.625em;
+	padding-top: 1.25em;
+	padding-bottom: 1.25em;
+	border-bottom: 1px solid rgb(245 245 245);
+}
+
+main section:nth-of-type(2) label {
+	font-size: 1em;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+main section:nth-of-type(2) input {
+	border: none;
+	border-bottom: 1px solid rgb(245 245 245);
+	width: 100%;
+	height: 2em;
+	margin-bottom: 1em;
+	font-weight: 300;
+}
+
+main section:nth-of-type(2) input::placeholder {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+main section:nth-of-type(2) input:focus {
+    outline: none;
+}
+
+main section:nth-of-type(2) button[type="submit"]{
+	background-color: black;
+	text-align: center;
+	padding-left: .625em;
+	padding-right: .625em;
+	font-size: 1em;
+	height: 2.5em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	font-weight: 600;
+}
+
+main section:nth-of-type(3) {
+	border-bottom: 1px solid rgb(245 245 245);
+}
+
+main section:nth-of-type(3) ul {
+	padding-left: .625em;
+	padding-right: .625em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr;
+}
+
+main section:nth-of-type(3) ul li {
+	list-style: none;
+	padding: .625em 0;
+
+}
+
+main section:nth-of-type(3) ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: black;
+}

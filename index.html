@@ -5,9 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Howdy FED2324</title>
-
+	<title>Stüssy EU – Worldwide Since 1980 – Stüssy Europe</title>
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="index">
+	<h1>Homepage Stüssy.com</h1>
 	<header>
 		<a href=""><img src="images/sl.svg" alt=""></a>
 		<ul>
@@ -32,10 +31,10 @@
 		<nav>
 			<ul>
 				<li>
-					<button>shop</button>
-					<ul>
+					<button>shop <img src="images/menuarrow.svg" alt=""></button>
+					<ul class="listGroupOpen">
 						<li><a href="">new arrivals</a></li>
-						<li><a href="">tees</a></li>
+						<li><a href="tees.html">tees</a></li>
 						<li><a href="">sweats</a></li>
 						<li><a href="">tops & shirts</a></li>
 						<li><a href="">denim</a></li>
@@ -50,7 +49,7 @@
 					</ul>
 				</li>
 				<li>
-					<button>support</button>
+					<button>support <img class="openTurnArrow" src="images/menuarrow.svg" alt=""></button>
 					<ul>
 						<li><a href="">customer support</a></li>
 						<li><a href="">shipping & returns</a></li>
@@ -73,8 +72,8 @@
 		</section>
 		<section>
 			<div>
-			<h2>shopping bag</h2>
-			<button><img src="images/cross.svg" alt=""></button>
+				<h2>shopping bag</h2>
+				<button><img src="images/cross.svg" alt=""></button>
 			</div>
 			<p>You have no items in your shopping bag.</p>
 			<p>Free shipping in US for orders over $200 USD.</p>
@@ -88,9 +87,12 @@
 				<figure>
 					<img src="images/heroimg.webp" alt="Newest collection">
 				</figure>
-				<h1>See new collection</h1>
+				<h2>See new collection</h2>
 			</a>
 		</section>
+	</main>
+
+	<footer>
 		<section>
 			<form action="">
 				<label for="newsletter">newsletter</label><br>
@@ -110,16 +112,18 @@
 				</ul>
 			</nav>
 		</section>
-	</main>
-
-	<footer>
-			<ul>
-				<li><a href=""><img src="images/insta.svg" alt=""></a></li>
-				<li><a href=""><img src="images/vimeo.svg" alt=""></a></li>
-				<li><a href=""><img src="images/wechat.svg" alt=""></a></li>
-				<li><a href=""><img src="images/weibo.svg" alt=""></a></li>
-			</ul>
-			<p>© 2023 STÜSSY</p>
+		<section>
+		<ul>
+			<li><a target="_blank" href="https://www.instagram.com/stussy/"><img src="images/insta.svg" alt=""></a></li>
+			<li><a target="_blank" href="https://vimeo.com/stussy"><img src="images/vimeo.svg" alt=""></a></li>
+			<li><a target="_blank"
+					href="https://www.stussy.com/pages/wechat?_gl=1*kt8da4*_ga*MTcxMzM5OTUwNC4xNjg3Nzc1Mjgw*_ga_TY9FR86WDP*MTY5NTI4MDg1Ny44LjEuMTY5NTI4MTc2OS42MC4wLjA."><img
+						src="images/wechat.svg" alt=""></a></li>
+			<li><a target="_blank" href="https://www.weibo.com/stussyofficial"><img src="images/weibo.svg" alt=""></a>
+			</li>
+		</ul>
+		<p>© 2023 STÜSSY</p>
+	</section>
 	</footer>
 
 	<script defer src="scripts/script.js"></script>

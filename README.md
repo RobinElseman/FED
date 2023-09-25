@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://eu.stussy.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepage
+  Homepage<br>
   <img src="readme-images/image-one.png" width="375px" alt="Homepage van stussy.com">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Productpagina
+  Productpagina<br>
   <img src="readme-images/image-two.png" width="375px" alt="Productpagina van stussy.com">
  
 </details>

@@ -32,7 +32,9 @@
 /* JOUW STYLING */
 /****************/
 
-.shirt h1, .index h1, .tees h1 {
+.shirt h1,
+.index h1,
+.tees h1 {
 	position: absolute;
 	left: -1000000vw;
 }
@@ -122,7 +124,7 @@ header nav ul li>button {
 }
 
 header nav ul li>button img {
-    height: .625em;
+	height: .625em;
 	margin-right: .625em;
 	transform: rotate(0deg);
 	transition: all .25s cubic-bezier(.215, .61, .355, 1);
@@ -132,11 +134,11 @@ header nav ul li>button img.openTurnArrow {
 	transform: rotate(-180deg);
 }
 
-header nav ul li ul{
+header nav ul li ul {
 	list-style: none;
 }
 
-header nav ul li ul li{
+header nav ul li ul li {
 	margin-bottom: .625em;
 	margin-left: 1.25em;
 }
@@ -148,16 +150,16 @@ header nav ul li ul li a {
 	font-weight: 600;
 }
 
-header nav > ul li button {
+header nav>ul li button {
 	line-height: 3em;
 	font-size: 1em;
 }
 
-header nav > ul > li {
+header nav>ul>li {
 	border-bottom: 1px solid grey;
 }
 
-header nav > ul > li > a {
+header nav>ul>li>a {
 	display: block;
 	text-transform: uppercase;
 	height: 100%;
@@ -169,7 +171,7 @@ header nav > ul > li > a {
 	text-decoration: none;
 }
 
-header nav ul li ul:first-of-type	{
+header nav ul li ul:first-of-type {
 	height: auto;
 	max-height: 0;
 	overflow: hidden;
@@ -385,12 +387,12 @@ main>div:first-of-type.activeBackground {
 .tees main>section:first-of-type {
 	height: 3.75em;
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	align-items: center;
 	padding: 0;
 }
 
-.tees main>section:first-of-type h2{
+.tees main>section:first-of-type h2 {
 	text-transform: uppercase;
 	font-size: 1em;
 	margin-left: .625em;
@@ -521,7 +523,7 @@ footer section:nth-of-type(3) p {
 	font-size: 1em;
 }
 
-footer section:nth-of-type(3){
+footer section:nth-of-type(3) {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -538,12 +540,12 @@ footer section:nth-of-type(3){
 
 
 
-.tees main>ul{
+.tees main>ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100vw;
 	padding-left: .625em;
-	padding-right:.625em;
+	padding-right: .625em;
 	padding-top: .625em;
 	grid-gap: .625em;
 	border-bottom: 1px solid rgb(169, 167, 167);
@@ -568,7 +570,7 @@ footer section:nth-of-type(3){
 	margin-right: .625em;
 	margin-top: .625em;
 	overflow-wrap: anywhere;
-} 
+}
 
 .tees main ul li a p {
 	margin-top: .125em;
@@ -622,7 +624,7 @@ footer section:nth-of-type(3){
 	display: block;
 }
 
-.tees main section:nth-of-type(2) form ul li input{
+.tees main section:nth-of-type(2) form ul li input {
 	accent-color: black;
 }
 
@@ -642,7 +644,7 @@ footer section:nth-of-type(3){
 	border-bottom: none;
 }
 
-.tees main section:nth-of-type(2) form section{
+.tees main section:nth-of-type(2) form section {
 	height: fit-content;
 	padding: 0;
 	margin: 0;
@@ -665,13 +667,13 @@ footer section:nth-of-type(3){
 	color: black;
 }
 
-.tees main section:nth-of-type(2) form section button:nth-of-type(2){
+.tees main section:nth-of-type(2) form section button:nth-of-type(2) {
 	background-color: black;
 	color: white;
 }
 
 body.tees main section:first-of-type {
-	border-bottom:  1px solid rgb(245 245 245);
+	border-bottom: 1px solid rgb(245 245 245);
 }
 
 body.tees main section:first-of-type.filterOpen {
@@ -725,7 +727,7 @@ body.tees main section:first-of-type.filterOpen {
 }
 
 .shirt main section:nth-of-type(2)>p:first-of-type {
-    font-weight: 100;
+	font-weight: 100;
 	border-bottom: 1px solid rgb(177, 177, 177);
 	padding-bottom: 1.25em;
 }
@@ -777,7 +779,7 @@ body.tees main section:first-of-type.filterOpen {
 	padding-right: .625em;
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2){
+.shirt main section:nth-of-type(2)>ul:nth-of-type(2) {
 	text-transform: none;
 }
 
@@ -818,7 +820,7 @@ body.tees main section:first-of-type.filterOpen {
 	display: block;
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li ul{
+.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li ul {
 	list-style-type: '- ';
 	padding-left: 1.25em;
 	padding-top: 1.25em;
@@ -839,15 +841,35 @@ body.tees main section:first-of-type.filterOpen {
 	border-top: 1px solid rgb(168, 168, 168);
 }
 
-.shirt footer {
-	border-top: 1px solid rgb(168, 168, 168);
-}
-
 .shirt main p:nth-of-type(3) {
 	padding-top: 1.25em;
 	padding-bottom: 1.25em;
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li:last-of-type p{
+.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li:last-of-type p {
 	padding-bottom: 1.25em;
 }
+
+.shirt main section:nth-of-type(3) {
+	display: flex;
+	position: sticky;
+	bottom: 0;
+}
+
+.shirt main section:nth-of-type(3) button {
+	width: 50%;
+	height: 3.75em;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: 1px solid black;
+}
+
+.shirt main section:nth-of-type(3) button:first-of-type {
+	background-color: black;
+	color: white;
+} 
+
+.shirt main section:nth-of-type(3) button:nth-of-type(2) {
+	background-color: white;
+	color: black;
+} 

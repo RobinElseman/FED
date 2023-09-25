@@ -84,17 +84,13 @@
         <div></div>
         <section>
             <h2>Tees</h2>
-            <button>Filter / sort +</button>
+            <button>Open filters</button>
         </section>
-        <!-- <section>
-            <section>
-                <h2>Filter</h2>
-                <button><img src="images/cross.svg" alt=""></button>
-            </section>
+        <section class="closedFilterMenu">
             <form action="">
                 <ul>
-                    <li>
-                        <p>Sort by</p>
+                    <button type="button">Sort by <img src="images/menuarrow.svg" alt=""></button>
+                    <li class="closedLi">
                         <input type="radio" name="sortBy" value="Newest" id="newest">
                         <label for="newest">Newest</label><br>
                         <input type="radio" name="sortBy" value="Oldest" id="oldest">
@@ -102,20 +98,20 @@
                         <input type="radio" name="sortBy" value="Popular" id="popular">
                         <label for="popular">Popular</label>
                     </li>
-                    <li>
-                        <p>Availability</p>
+                    <button type="button">Availability <img src="images/menuarrow.svg" alt=""></button>
+                    <li class="closedLi">
                         <input type="checkbox" id="hideSoldOut" name="availability" value="hide">
                         <label for="hideSoldOut">Hide sold out products</label><br>
                     </li>
-                    <li>
-                        <p>Product type</p>
+                    <button type="button">Product type <img src="images/menuarrow.svg" alt=""></button>
+                    <li class="closedLi">
                         <input type="checkbox" id="longsleeve" name="longsleeve" value="longsleeve">
                         <label for="longsleeve">Longsleeve</label><br>
                         <input type="checkbox" id="shortsleeve" name="shortsleeve" value="shortsleeve">
                         <label for="shortsleeve">Shortsleeve</label>
                     </li>
-                    <li>
-                        <p>Size</p>
+                    <button type="button">Size <img src="images/menuarrow.svg" alt=""></button>
+                    <li class="closedLi">
                         <input type="checkbox" id="s" name="s" value="s">
                         <label for="s">s</label><br>
                         <input type="checkbox" id="m" name="m" value="m">
@@ -127,8 +123,8 @@
                         <input type="checkbox" id="xxl" name="xxl" value="xxl">
                         <label for="xxl">xxl</label>
                     </li>
-                    <li>
-                        <p>Color</p>
+                    <button type="button">Color <img src="images/menuarrow.svg" alt=""></button>
+                    <li class="closedLi">
                         <input type="checkbox" id="black" name="black" value="black">
                         <label for="black">black</label><br>
                         <input type="checkbox" id="blue" name="blue" value="blue">
@@ -149,53 +145,57 @@
                         <label for="yellow">yellow</label><br>
                     </li>
                 </ul>
+                <section>
+                    <button type="reset">Clear</button>
+                    <button type="submit">Apply filters</button>
+                </section>
             </form>
-        </section> -->
+        </section>
         <ul>
-            <li class="soldOut">
-                <a href="">
+            <li>
+                <a href="shirt.html">
                     <img src="/images/shirt.webp" alt="">
                     <h3>Dizzy stock tee</h3>
-                    <p>Sold out</p>
+                    <p>€48</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="shirt.html">
                     <img src="/images/shirt2.webp" alt="">
                     <h3>Classic dot tee</h3>
                     <p>€48</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="shirt.html">
                     <img src="/images/shirt3.webp" alt="">
                     <h3>Web tee pigment dyed</h3>
                     <p>€52</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="shirt.html">
                     <img src="/images/shirt4.webp" alt="">
                     <h3>Soda can tee</h3>
                     <p>€38</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="shirt.html">
                     <img src="/images/shirt5.webp" alt="">
                     <h3>Rib cage 3m ls tee</h3>
                     <p>€58</p>
                 </a>
             </li>
             <li class="soldOut">
-                <a href="">
+                <a href="shirt.html">
                     <img src="/images/shirt.webp" alt="">
                     <h3>Dizzy stock tee</h3>
                     <p>Sold out</p>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="shirt.html">
                     <img src="/images/shirt2.webp" alt="">
                     <h3>Dizzy stock tee</h3>
                     <p>€48</p>

@@ -15,71 +15,72 @@
 
 <body class="tees">
     <h1>Stüssy All Tees</h1>
-    <header>
-        <a href="index.html"><img src="images/sl.svg" alt=""></a>
-        <ul>
-            <li>
-                <button><img src="images/si.svg" alt=""></button>
-            </li>
-            <li>
-                <button><img src="images/sc.svg" alt=""></button>
-            </li>
-            <li>
-                <button><img src="images/hm.svg" alt=""></button>
-            </li>
-        </ul>
-        <nav>
-            <ul>
-                <li>
-                    <button>shop <img src="images/menuarrow.svg" alt=""></button>
-                    <ul class="listGroupOpen">
-                        <li><a href="">new arrivals</a></li>
-                        <li><a href="">tees</a></li>
-                        <li><a href="">sweats</a></li>
-                        <li><a href="">tops & shirts</a></li>
-                        <li><a href="">denim</a></li>
-                        <li><a href="">shorts</a></li>
-                        <li><a href="">pants</a></li>
-                        <li><a href="">knits</a></li>
-                        <li><a href="">outerwear</a></li>
-                        <li><a href="">headwear</a></li>
-                        <li><a href="">eyewear</a></li>
-                        <li><a href="">accessories</a></li>
-                        <li><a href="">all</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <button>support <img class="openTurnArrow" src="images/menuarrow.svg" alt=""></button>
-                    <ul>
-                        <li><a href="">customer support</a></li>
-                        <li><a href="">shipping & returns</a></li>
-                        <li><a href="">careers</a></li>
-                        <li><a href="">legal</a></li>
-                        <li><a href="">accessibility</a></li>
-                        <li><a href="">chat</a></li>
-                    </ul>
-                </li>
-                <li> <a href="">account</a></li>
-                <li> <a href="">chapters</a></li>
-                <li><a href="">features</a></li>
-            </ul>
-
-        </nav>
-        <section>
-            <img src="images/si.svg" alt="">
-            <input type="text" placeholder="search for keywords">
-            <button type="reset">Clear</button>
-        </section>
-        <section>
-            <div>
-                <h2>shopping bag</h2>
-                <button><img src="images/cross.svg" alt=""></button>
-            </div>
-            <p>You have no items in your shopping bag.</p>
-            <p>Free shipping in US for orders over $200 USD.</p>
-            <button>Continue shopping</button>
-        </section>
-    </header>
+	<header>
+		<a href="index.html"><img src="images/sl.svg" alt="Stüssy logo"></a>
+		<ul>
+			<li>
+				<button aria-label="Search menu" aria-expanded="false"><img src="images/si.svg" alt=""></button>
+			</li>
+			<li>
+				<button aria-label="Shopping cart menu" aria-expanded="false"><img src="images/sc.svg" alt=""></button>
+			</li>
+			<li>
+				<button aria-label="Hamburger menu" aria-expanded="false" aria-controls="main-menu"><img
+						src="images/hm.svg" alt=""></button>
+			</li>
+		</ul>
+		<nav>
+			<ul id="main-menu" aria-hidden="true">
+				<li>
+					<button aria-expanded="true">shop<img src="images/menuarrow.svg" alt=""></button>
+					<ul class="listGroupOpen" aria-hidden="false">
+						<li><a href="https://www.stussy.com/collections/new-arrivals">new arrivals</a></li>
+						<li><a href="tees.html">tees</a></li>
+						<li><a href="https://www.stussy.com/collections/sweats">sweats</a></li>
+						<li><a href="https://www.stussy.com/collections/tops-shirts">tops & shirts</a></li>
+						<li><a href="https://www.stussy.com/collections/denim">denim</a></li>
+						<li><a href="https://www.stussy.com/collections/shorts">shorts</a></li>
+						<li><a href="https://www.stussy.com/collections/pants">pants</a></li>
+						<li><a href="https://www.stussy.com/collections/knits">knits</a></li>
+						<li><a href="https://www.stussy.com/collections/outerwear">outerwear</a></li>
+						<li><a href="https://www.stussy.com/collections/headwear">headwear</a></li>
+						<li><a href="https://www.stussy.com/collections/eyewear">eyewear</a></li>
+						<li><a href="https://www.stussy.com/collections/accessories">accessories</a></li>
+						<li><a href="https://www.stussy.com/collections/all">all</a></li>
+					</ul>
+				</li>
+				<li>
+					<button aria-expanded="false">support <img class="openTurnArrow" src="images/menuarrow.svg"
+							alt=""></button>
+					<ul>
+						<li><a href="https://www.stussy.com/pages/customer-support">customer support</a></li>
+						<li><a href="https://www.stussy.com/pages/shipping-returns">shipping & returns</a></li>
+						<li><a href="https://www.stussy.com/pages/careers">careers</a></li>
+						<li><a href="https://www.stussy.com/pages/legal">legal</a></li>
+						<li><a href="https://www.stussy.com/pages/accessibility">accessibility</a></li>
+						<li><a href="#">chat</a></li>
+					</ul>
+				</li>
+				<li> <a href="https://www.stussy.com/account/login?return_url=%2Faccount">account</a></li>
+				<li> <a href="https://www.stussy.com/blogs/chapters#chapters-north-america">chapters</a></li>
+				<li> <a href="https://www.stussy.com/blogs/features">features</a></li>
+			</ul>
+		</nav>
+		<section aria-hidden="true">
+			<img src="images/si.svg" alt="">
+			<input type="text" placeholder="search for keywords">
+			<button type="reset">Clear</button>
+		</section>
+		<section aria-hidden="true">
+			<div>
+				<h2>shopping bag</h2>
+				<button><img src="images/cross.svg" alt=""></button>
+			</div>
+			<p>You have no items in your shopping bag.</p>
+			<p>Free shipping in US for orders over $200 USD.</p>
+			<button>Continue shopping</button>
+		</section>
+	</header>
     <main>
         <div></div>
         <section>
@@ -255,41 +256,40 @@
     </main>
 
     <footer>
-        <section>
-            <form action="">
-                <label for="newsletter">newsletter</label><br>
-                <input type="email" placeholder="e-mail">
-                <button type="submit">subscribe</button>
-            </form>
-        </section>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="#/">Contact</a></li>
-                    <li><a href="">Account</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Chapters</a></li>
-                    <li><a href="">Country</a></li>
-                    <li><a href="">Chat</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <ul>
-                <li><a target="_blank" href="https://www.instagram.com/stussy/"><img src="images/insta.svg" alt=""></a>
-                </li>
-                <li><a target="_blank" href="https://vimeo.com/stussy"><img src="images/vimeo.svg" alt=""></a></li>
-                <li><a target="_blank"
-                        href="https://www.stussy.com/pages/wechat?_gl=1*kt8da4*_ga*MTcxMzM5OTUwNC4xNjg3Nzc1Mjgw*_ga_TY9FR86WDP*MTY5NTI4MDg1Ny44LjEuMTY5NTI4MTc2OS42MC4wLjA."><img
-                            src="images/wechat.svg" alt=""></a></li>
-                <li><a target="_blank" href="https://www.weibo.com/stussyofficial"><img src="images/weibo.svg"
-                            alt=""></a>
-                </li>
-            </ul>
-            <p>© 2023 STÜSSY</p>
-        </section>
-
-    </footer>
+		<section>
+			<form action="#" method="get">
+				<label for="newsletter">newsletter</label><br>
+				<input required aria-required="true" id="newsletter" type="email" placeholder="e-mail">
+				<button type="submit">subscribe</button>
+			</form>
+		</section>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="https://www.stussy.com/pages/customer-support">Contact</a></li>
+					<li><a href="https://www.stussy.com/account">Account</a></li>
+					<li><a href="https://www.stussy.com/blogs/features">Features</a></li>
+					<li><a href="https://www.stussy.com/blogs/chapters#chapters-north-america">Chapters</a></li>
+					<li><a href="#">Country</a></li>
+					<li><a href="#">Chat</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section>
+			<ul>
+				<li><a title="Instagram profile" target="_blank" href="https://www.instagram.com/stussy/"><img src="images/insta.svg" alt="Instagram icon"></a>
+				</li>
+				<li><a title="Vimeo profile" target="_blank" href="https://vimeo.com/stussy"><img src="images/vimeo.svg" alt="Vimeo icon"></a></li>
+				<li><a title="WeChat profile" target="_blank"
+						href="https://www.stussy.com/pages/wechat?_gl=1*kt8da4*_ga*MTcxMzM5OTUwNC4xNjg3Nzc1Mjgw*_ga_TY9FR86WDP*MTY5NTI4MDg1Ny44LjEuMTY5NTI4MTc2OS42MC4wLjA."><img
+							src="images/wechat.svg" alt="Wechat icon"></a></li>
+				<li><a title="Weibo profile" target="_blank" href="https://www.weibo.com/stussyofficial"><img src="images/weibo.svg"
+							alt="Weibo icon"></a>
+				</li>
+			</ul>
+			<p>© 2023 STÜSSY</p>
+		</section>
+	</footer>
 
     <script defer src="scripts/script.js"></script>
 </body>

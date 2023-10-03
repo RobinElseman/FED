@@ -9,11 +9,14 @@ var hamburgerMenuIcon = document.querySelector("header>ul li:nth-of-type(3) butt
 var hamburgerMenuIconImg = document.querySelector("header>ul li:nth-of-type(3) button img");
 var shopCartCross = document.querySelector("header section:nth-of-type(2) div button");
 var shopCartShop = document.querySelector("header section:nth-of-type(2)>button");
+var shopCart = document.querySelector("header>ul li:nth-of-type(2) button");
 
 // SEARCH ICON FUNCTION
 searchIcon.addEventListener("click", function () { crossFunction() });
 function crossFunction() {
     if (searchIconImg.src.endsWith("si.svg")) {
+        searchIcon.ariaExpanded = true;
+        document.querySelector("header section:first-of-type").ariaHidden = "false";
         searchIconImg.src = "images/cross.svg";
         document.querySelector("header section:first-of-type").classList.add("searchBarOpen");
         document.querySelector("main>div").classList.add("activeBackground");
@@ -22,9 +25,15 @@ function crossFunction() {
         document.querySelector("header section:nth-of-type(2)").classList.remove("shopCartOpen");
         hamburgerMenuIconImg.src = "images/hm.svg";
         document.querySelector("header section:first-of-type input").focus();
+        hamburgerMenuIcon.ariaExpanded = false;
+        shopCart.ariaExpanded = false;
+        document.querySelector("header nav ul").ariaHidden = true;
+        document.querySelector("header section:nth-of-type(2)").ariaHidden = "true";
     }
     else {
+        document.querySelector("header section:first-of-type").ariaHidden = "true";
         searchIconImg.src = "images/si.svg";
+        searchIcon.ariaExpanded = false;
         document.querySelector("header section:first-of-type").classList.remove("searchBarOpen");
         document.querySelector("main>div").classList.remove("activeBackground");
         document.querySelector("body").classList.remove("menuOpenNoScroll");
@@ -48,6 +57,12 @@ function openShopCart() {
     document.querySelector("body").classList.add("menuOpenNoScroll");
     searchIconImg.src = "images/si.svg";
     hamburgerMenuIconImg.src = "images/hm.svg";
+    document.querySelector("header section:first-of-type").ariaHidden = "true";
+    searchIcon.ariaExpanded = false;
+    hamburgerMenuIcon.ariaExpanded = false;
+    shopCart.ariaExpanded = true;
+    document.querySelector("header nav ul").ariaHidden = true;
+    document.querySelector("header section:nth-of-type(2)").ariaHidden = "false";
 };
 
 //// function close
@@ -57,6 +72,8 @@ function closeShopCart() {
     document.querySelector("header section:nth-of-type(2)").classList.remove("shopCartOpen");
     document.querySelector("main>div").classList.remove("activeBackground");
     document.querySelector("body").classList.remove("menuOpenNoScroll");
+    shopCart.ariaExpanded = false;
+    document.querySelector("header section:nth-of-type(2)").ariaHidden = "true";
 };
 
 // HAMBURGER MENU FUNCTION
@@ -66,36 +83,86 @@ function openUpMenu() {
     if (hamburgerMenuIconImg.src.endsWith("hm.svg")) {
         document.querySelector("header>nav").classList.add("menuOpen");
         hamburgerMenuIconImg.src = "images/cross.svg";
+        document.querySelector("header section:first-of-type").ariaHidden = "true";
         document.querySelector("main>div").classList.add("activeBackground");
         document.querySelector("body").classList.add("menuOpenNoScroll");
         document.querySelector("header section:first-of-type").classList.remove("searchBarOpen");
         document.querySelector("header section:nth-of-type(2)").classList.remove("shopCartOpen");
         searchIconImg.src = "images/si.svg";
+        searchIcon.ariaExpanded = false;
+        hamburgerMenuIcon.ariaExpanded = true;
+        shopCart.ariaExpanded = false;
+        document.querySelector("header nav ul").ariaHidden = false;
+        document.querySelector("header section:nth-of-type(2)").ariaHidden = "true";
     }
     else {
         document.querySelector("header>nav").classList.remove("menuOpen");
         hamburgerMenuIconImg.src = "images/hm.svg";
         document.querySelector("main>div").classList.remove("activeBackground");
         document.querySelector("body").classList.remove("menuOpenNoScroll");
+        document.querySelector("header nav ul").ariaHidden = true;
     };
+
 };
+
+
 
 //// menu list 1 open/close
-var shopOpenButton = document.querySelector("header nav ul li:first-of-type button");
-shopOpenButton.addEventListener("click", function () { shopOpenFunction() });
+var shopOpenButton1 = document.querySelector("header nav ul > li:first-of-type button");
+shopOpenButton1.addEventListener("click", function () { shopOpenFunction() });
 function shopOpenFunction() {
-    document.querySelector("header nav ul li:first-of-type ul").classList.toggle("listGroupOpen");
-    document.querySelector("header nav ul li:nth-of-type(2) ul").classList.remove("listGroupOpen");
-    document.querySelector("header nav ul li:first-of-type button img").classList.toggle("openTurnArrow");
+
+    // dicht doen menu
+    if (shopOpenButton1.ariaExpanded == "true") {
+        // lijst 1
+        shopOpenButton1.ariaExpanded = "false";
+        document.querySelector("header nav ul li:first-of-type ul").ariaHidden = true;
+        document.querySelector("header nav ul li:first-of-type ul").classList.remove("listGroupOpen");
+        document.querySelector("header nav ul li:first-of-type button img").classList.add("openTurnArrow")
+    }
+
+    // open maken menu
+    else {
+        // lijst 1
+        shopOpenButton1.ariaExpanded = "true";
+        document.querySelector("header nav ul li:first-of-type ul").ariaHidden = false;
+        document.querySelector("header nav ul li:first-of-type button img").classList.remove("openTurnArrow")
+        document.querySelector("header nav ul li:first-of-type ul").classList.add("listGroupOpen");
+        // lijst 2
+        document.querySelector("header nav ul li:nth-of-type(2) button img").classList.add("openTurnArrow");
+        document.querySelector("header nav ul li:nth-of-type(2) ul").classList.remove("listGroupOpen");
+        shopOpenButton2.ariaExpanded = "false";
+        document.querySelector("header nav ul li:nth-of-type(2) ul").ariaHidden = true;
+    }
 };
 
+
+
 //// menu list 2 open/close
-var shopOpenButton = document.querySelector("header nav ul li:nth-of-type(2) button");
-shopOpenButton.addEventListener("click", function () { supportOpenFunction() });
+var shopOpenButton2 = document.querySelector("header nav ul li:nth-of-type(2) button");
+shopOpenButton2.addEventListener("click", function () { supportOpenFunction() });
 function supportOpenFunction() {
-    document.querySelector("header nav ul li:nth-of-type(2) ul").classList.toggle("listGroupOpen");
-    document.querySelector("header nav ul li:first-of-type ul").classList.remove("listGroupOpen");
-    document.querySelector("header nav ul li:nth-of-type(2) button img").classList.toggle("openTurnArrow");
+    // menu dicht doen
+    if (shopOpenButton2.ariaExpanded == "true") {
+        // lijst 2
+        shopOpenButton2.ariaExpanded = "false";
+        document.querySelector("header nav ul li:nth-of-type(2) ul").ariaHidden = true;
+        document.querySelector("header nav ul li:nth-of-type(2) ul").classList.remove("listGroupOpen");
+        document.querySelector("header nav ul li:nth-of-type(2) button img").classList.add("openTurnArrow");
+    }
+    else {
+        //lijst 2
+        shopOpenButton2.ariaExpanded = "true";
+        document.querySelector("header nav ul li:nth-of-type(2) ul").ariaHidden = false;
+        document.querySelector("header nav ul li:nth-of-type(2) ul").classList.add("listGroupOpen");
+        document.querySelector("header nav ul li:nth-of-type(2) button img").classList.remove("openTurnArrow");
+
+        //lijst 1
+        document.querySelector("header nav ul li:first-of-type button img").classList.add("openTurnArrow");
+        document.querySelector("header nav ul li:first-of-type ul").ariaHidden = true;
+        shopOpenButton1.ariaExpanded = "false";
+        document.querySelector("header nav ul li:first-of-type ul").classList.remove("listGroupOpen");
+    }
 };
 
 var filterButtonOpen = document.querySelector("body.tees main section:first-of-type button");
@@ -198,5 +265,20 @@ function infoFunction2 () {
     document.querySelector(".shirt main section:nth-of-type(2)>ul:nth-of-type(2) button:nth-of-type(2) img").classList.toggle("activeInfoImg");
 }
 
+var infoButton3 = document.querySelector(".shirt main section:nth-of-type(2)>ul:nth-of-type(2)>button:nth-of-type(3)");
+infoButton3.addEventListener("click", function () { infoFunction3() });
+function infoFunction3 () {
+    document.querySelector(".shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li:nth-of-type(3)").classList.toggle("activeInfo");
+    document.querySelector(".shirt main section:nth-of-type(2)>ul:nth-of-type(2) button:nth-of-type(3)").classList.toggle("activeInfoText");
+    document.querySelector(".shirt main section:nth-of-type(2)>ul:nth-of-type(2) button:nth-of-type(3) img").classList.toggle("activeInfoImg");
+}
 
+var addToCartButton = document.querySelector(".shirt main section:nth-of-type(3) button:first-of-type");
+var cartImg = document.querySelector("header ul:first-of-type li:nth-of-type(2) button img");
+addToCartButton.addEventListener("click", function () { addToCartFunction() });
+function addToCartFunction () {
+    cartImg.classList.add("activeCart");
+    
+}
+cartImg.addEventListener("animationend", function () { cartImg.classList.remove("activeCart") });
 };

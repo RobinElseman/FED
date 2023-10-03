@@ -92,7 +92,7 @@ header>ul li button img {
 	margin: 0 .625em;
 }
 
-header>nav {
+header > nav {
 	margin-top: 3.75em;
 	position: fixed;
 	top: 0;
@@ -873,3 +873,83 @@ body.tees main section:first-of-type.filterOpen {
 	background-color: white;
 	color: black;
 } 
+
+.shirt main table{
+	text-align: left;
+}
+
+.shirt main table th, .shirt main table td {
+	padding-right: 1.25em;
+}
+
+.shirt main section:nth-of-type(2) ul li:nth-of-type(2) img {
+	width: 100%;
+	padding-top: 1.25em;
+	padding-bottom: 1.25em;
+	padding-left: .625em;
+	padding-right: .625em;
+}
+
+@media only screen and (min-width: 600px) {
+	.shirt main {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+	}
+
+	.shirt main section:first-of-type {
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+
+	.shirt main section:nth-of-type(2) {
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.shirt main section:nth-of-type(3) {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		position: static;
+		padding-left: .625em;
+		padding-right: .625em;
+		align-self: flex-end;
+	}
+
+	.shirt main section:nth-of-type(2) ul li:nth-of-type(2) img {
+		width: 50%;
+	}
+	.tees main>ul {
+	grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.tees main>ul {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+}
+
+header ul:first-of-type li:nth-of-type(2) button img.activeCart {
+	animation: addToBagAnimation .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes addToBagAnimation {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(2);
+	}
+	30% {
+		transform: rotate(30deg) scale(2);
+	}
+	70% {
+		transform: rotate(-30deg) scale(2);
+		}
+	90% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

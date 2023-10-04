@@ -121,6 +121,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Daarnaast ook voor het begrijpen en aanpassen en stijlen van de elementen.
   </li>
 
+  Verbeter feedback:
   <li>
   In de CSS was er nog ruimte voor verbetering.
 
@@ -129,6 +130,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Daarnaast kreeg ik ook te horen dat er nog verbetering mogelijk was bij de alt teksten van img's bijvoorbeeld. Ik ben het eens dat deze in het eindproduct moeten komen. Dit heb ik alleen in week 1 nog niet geregeld. Eerst lag mijn focus bij het werkend maken van de website.
   </li>
 
+  Vragen
   <li>
   Ik heb tijdens het gesprek met de studentassistent ook verschillende vragen kunnen stellen.
 
@@ -149,7 +151,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  In week 2 heb ik vooral verder gewerkt aan het navigatie gedeelte van de website. Het koste veel tijd om met JavaScript de buttons open te laten "rollen". Ik heb hier met de docent ook nog over gedacht hoe de correcte manier was om dit te doen. Samen kwamen we tot de conclusie dat dit eigenlijk alleen kan met vaste variabelen. Ik heb hier uiteindelijk een andere keuze in gemaakt. De open animatie duurt nu korter dan het sluiten van verschillende tabjes in het hamburger menu. De afweging staat hierin tegenover toekomstige plannen. Er is nu een veel makkelijkere manier om het menu uit te bereiden. Mochten ze besluiten om een extra categorie met bierviltjes of iets dergelijks te maken, is hier nu direct de mogelijkheid toe. Dit had niet gekunt als dit met vaste getallen was geregeld. Dit is dus waarom ik heb gekozen voor deze kant van het verhaal.
+
+  Ik merkte tijdens het programmeren en vooral testen dat het het beste was om als er een tweede menu wordt geopend, de vorige dicht te doen. In het kader van user experience is dit vaak een geprefereerde optie. Het enige was dat, omdat ik toggle states gebruikte voor de classList in JavaScript, dat de peiltjes van de buttons verkeerd konden staan ten opzichte van hun daadwerkelijke status. Daarnaast hield ik nog geen rekening met de aria labels die hierbij komen kijken. 
 
 
   ### Agenda voor meeting

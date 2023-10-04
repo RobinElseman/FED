@@ -189,11 +189,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  <img src="readme-images/f1.jpg" width="375px" alt="Checklist accessibility page 1">
-  <img src="readme-images/f2.jpg" width="375px" alt="Checklist accessibility page 2">
-  <img src="readme-images/f3.jpg" width="375px" alt="Checklist accessibility page 3">
-  <img src="readme-images/f4.jpg" width="375px" alt="Checklist accessibility page 4">
-  <img src="readme-images/f5.jpg" width="375px" alt="Checklist accessibility page 5">
+  <img src="readme-images/f1.png" width="375px" alt="Checklist accessibility page 1">
+  <img src="readme-images/f2.png" width="375px" alt="Checklist accessibility page 2">
+  <img src="readme-images/f3.png" width="375px" alt="Checklist accessibility page 3">
+  <img src="readme-images/f4.png" width="375px" alt="Checklist accessibility page 4">
+  <img src="readme-images/f5.png" width="375px" alt="Checklist accessibility page 5">
 
 Zoals te zien is op de lijst zijn er enkele zaken verbeterd en verslechterd. De zaken die slechter zijn geworden zijn dingen waar ik in deze week nog niet aan toe ben gekomen. Ze staan daarintegen wel op de lijst van dingen die snel moeten worden gemaakt.
 

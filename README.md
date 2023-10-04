@@ -87,13 +87,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/bds1.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bds2.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -107,19 +104,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze week heb ik een paar momentjes gehad waar ik helemaal kriegel werd van de code. Eigenlijk ben ik de hele week bezig geweest met het maken van de navigatie en footer. Tussendoor heb ik ook aan de main van index.html gewerkt als afleiding van de header en footer.
 
+  Ik ben blij dat ik met behulp van de docent tot de responsive afbeelding ben gekomen. Deze schaalt nu automatisch mee met de viewport van de browser.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  De custom properties laat ik voor nu nog even achterwegen en zal ik later toevoegen. Eerst vind ik het belangrijk om de basis van de HTML goed te krijgen. Samen met losse CSS werkt het uiteindelijk al een aardig stuk, maar ik heb wel een aantal keren de structuur van mijn HTML moeten aanpassen.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ### Meeting met studentassistent
+  Positieve feedback:
+  <ul>
+  <li>
+  De HTML van de website zag er goed en netjes uit, daar was ze tevreden over.
 
+  - Toch moet ik wel focussen op de structuur...
+    - Dit is belangrijk voor de screenreader en tab volgorde.
+    - Daarnaast ook voor het begrijpen en aanpassen en stijlen van de elementen.
+  </li>
+  <li>
 
+  </li>
+  </ul>
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 

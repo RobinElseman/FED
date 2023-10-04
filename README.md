@@ -182,8 +182,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  <img src="readme-images/f1.jpg" width="375px" alt="Checklist accessibility page 1">
+  <img src="readme-images/f2.jpg" width="375px" alt="Checklist accessibility page 2">
+  <img src="readme-images/f3.jpg" width="375px" alt="Checklist accessibility page 3">
+  <img src="readme-images/f4.jpg" width="375px" alt="Checklist accessibility page 4">
+  <img src="readme-images/f5.jpg" width="375px" alt="Checklist accessibility page 5">
 
+Zoals te zien is op de lijst zijn er enkele zaken verbeterd en verslechterd. De zaken die slechter zijn geworden zijn dingen waar ik in deze week nog niet aan toe ben gekomen. Ze staan daarintegen wel op de lijst van dingen die snel moeten worden gemaakt.
+
+Daarnaast heb ik ook een aantal dingen dus verbeterd en daar ben ik erg tevreden en blij mee.
 </details>
 
 
@@ -195,28 +202,48 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
+
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  In week 3 heb ik vooral grote stappen geboekt. Ik heb in deze week eigenlijk de gehele tees.html pagina afgemaakt. In de vorige week heb ik hier al een begin aan gemaakt maar deze was nog niet helemaal af. Het gebruiken van de buttons en list daaronder werkte wel, maar wederom met toggle classes. Ook de product pagina heb ik op deze manier laten werken. Ik ben kort bezig geweest om deze responsive te maken en de grid heb ik ook hier toegepast.
+  
+  Vervolgens ben ik ook een zeer grote tijd bezig geweest met het hertypen van mijn JavaScript. De volgende bugs/fouten zaten in mijn code:
+  - Toggle classLists
+  - Totale choas
+  - Onnodige classes gebruiken voor styling
+  - Niet mogelijk om aria labels te gebruiken met bestaande functies
+  - Geen mogelijkheid voor hoog contrast
+  - Geen mogelijkheid voor mindere animaties
+
+  Het koste me wel wat tijd maar ik heb de nodige functies hergeschreven met if/else statements zodat er gebruik kan worden gemaakt van de aria labels voor de screenreaders. Het is natuurlijk erg belangrijk om de screenreader te ondersteunen met aria labels.
+
+  De Javascript heb ik ook meer opgeruimd door met comments meer steun te bieden aan de persoon die de code bekijkt. Door het herschrijven van de functie's werd het vanzelf eigenlijk al beter, maar ook voor mezelf werkte het prettig om tijdens het programmeren extra hints te krijgen wat welke functie deed. Tijdens het doen van kleine ingrepen is het een stuk makkelijker om problemen te vinden.
+
+  Ik heb in de CSS veel meer styling gedaan op basis van aria labels zoals aria hidden en aria expanded. Hierdoor wordt de code ook minder vol met onnodige classLists. De docent had al eerder benoemd dat dit voor bonus punten zou zorgen. Eerlijk gezegd had ik er weinig vertrouwen in dat ik hier gebruik van zou maken, maar ik heb er toch gebruik van gemaakt. Niet alles heb ik helaas kunnen doen door tijdsgebrek, maar ik heb toch een groot deel kunnen doen.
+  
+  Door het herschrijven werd het ook mogelijk om de aria labels te coderen met JavaScript. Dit geeft de screenreader meer informatie over bijvoorbeeld de status van het hamburger menu. Ik ben samen met de docent toch tegen een heel bijzonder probleem aangelopen waarbij de HTML niet werd geupdate in de browers inspector. Toen ik later lang en goed heb gekeken kwam ik erachter waar het aan lag en heb ik het gelijk opgelost.
+
+  Op het laatste moment ben ik ook aan de slag gegaan om media querys te maken om zo mensen die graag minder motion of meer contrast willen te voorzien in hun behoeftes. Het was een stuk makkelijker dan ik dacht en ik ben erg blij dat dit in de opdracht zit verwerkt.
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  ### Meeting met studentassistent
+  Positieve feedback:
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+De volgende punten van positieve feedback werden gedeeld met mij...
+  - De HTML van de website zag er nog steeds goed en netjes uit, daar was ze nog steeds tevreden over.
+  - Er werd mij toch nog verteld dat ik toch echt gebruik van custom properties moest proberen. Op het laatste moment heb ik dit gedaan en ik heb spijt dat ik deze niet eerder heb gebruikt. Dit zijn echt top dingen van CSS die ik in de toekomst gegarandeerd zal gebruiken. Ook eerder in het proces.
 
+---
+  Verbeter feedback:
 
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  In de code was er nog ruimte voor verbetering.
+  - Pas de CSS styling aan op de aria labels van een HTML element. Dit is iets waar ik dus zeker nog mee aan de slag ben gegaan. Ik ben echt heel content met het feit dat dit werkt. Hierdoor is de code in het Javascript bestand een stuk rustiger en overzichtelijker.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+---
+  Vragen:
 
+  Ik heb tijdens het gesprek met de studentassistent ook verschillende vragen kunnen stellen.
+  - Deze vragen gingen over...
+    - Het gebruiken van custom properties in CSS. Dit was eigenlijk een gesprek en hulpvraag aan de docent. Het nesten van de properties is dus een mogelijkheid. Dit heb ik ook toegepast voor de prefers reduced motion bezoekers waarbij de duration van de animatie op 0s wordt gezet. De gehele shorthand van de animatie staat in een custom property, maar de animation duration van deze animatie staat ook in een custom property. Deze property wordt dus aangepast aan de hand van een media query.
 </details>
 
 

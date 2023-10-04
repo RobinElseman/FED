@@ -118,7 +118,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Dit is belangrijk voor de screenreader en tab volgorde.
     - Daarnaast ook voor het begrijpen en aanpassen en stijlen van de elementen.
 
- <img src="readme-images/1.png" width="375px" alt="Goede HTML code">
+  <img src="readme-images/1.png" width="375px" alt="Goede HTML code">
 
 ---
   Verbeter feedback:
@@ -128,7 +128,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Vergeet niet om gebruik te maken van de custom properties in CSS. Ik heb er toen bewust voor gekozen om deze later in te voegen omdat mij dit handiger en overzichtelijk leek.
     - Daarnaast kreeg ik ook te horen dat er nog verbetering mogelijk was bij de alt teksten van img's bijvoorbeeld. Ik ben het eens dat deze in het eindproduct moeten komen. Dit heb ik alleen in week 1 nog niet geregeld. Eerst lag mijn focus bij het werkend maken van de website.
 
-     <img src="readme-images/2.png" width="375px" alt="De vergeten custom properties">
+  <img src="readme-images/2.png" width="375px" alt="De vergeten custom properties">
 
 ---
   Vragen:

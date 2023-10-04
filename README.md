@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Robin Elseman
+  Robin Elseman 😎
 
   #### Je startniveau:
-  Zwart
+  Rood
 
   #### Je focus:
-  Responsive
+  Responsive & surface plane
  
 </details>
 
@@ -32,20 +32,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://eu.stussy.com/
+  [Stussy's website link](https://eu.stussy.com/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepage<br>
   <img src="readme-images/image-one.png" width="375px" alt="Homepage van stussy.com">
 
+---
+
   #### Screenshot(s) van de tweede pagina (small screen):
   Productpagina<br>
   <img src="readme-images/image-two.png" width="375px" alt="Productpagina van stussy.com">
- 
+
 </details>
 
 

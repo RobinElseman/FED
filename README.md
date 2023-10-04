@@ -256,19 +256,51 @@ De volgende punten van positieve feedback werden gedeeld met mij...
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/pagina1.jpg" width="375px" alt="uitomst screenshot 1">
+  Een van de pagina's waar ik heel tevreden over ben. De pagina miste in het origineel een h1. Deze heb ik onzichtbaar toegevoegd, een daarnaast was er over de grote button met afbeelding totaal niets bekend voor de screenreader. Hier heb ik een figure van gemaakt met een duidelijkere bestemming van de link. Het is mij goed bevallen om een afbeelding mee te laten schalen met verschillende schermgroottes.
+  ---
 
+  <img src="readme-images/pagina2.jpg" width="375px" alt="uitomst screenshot 2">
+  De overzichtpagina met alle verschillende shirts viel mee om te maken. Het sorteer systeem (prototype) was het moeilijkste deel. Net gebruiken van grid is in dit geval het aller makkelijkste. Ik ben daarom ook erg blij dat we dat hebben geleerd met dit vak. Deze techniek wil ik ook graag vaker gebruiken in de toekomst.
+  
+  Op de originele pagina is het verschil van sold out items alleen getoond door een halve oppacity waarde en geen verschil in de letters. Doordat er vaak spullen zijn uitverkocht heb ik in het verleden vaak door het kleine contrast op uitverkochte spullen geklikt. Dit is in mijn ontwerp duidelijker doordat de prijs duidelijk is aangegeven met een zwarte background color en witte kleur en tekst die duidelijk maakt dat iets sold out is.
+  ---
+
+  <img src="readme-images/pagina3.jpg" width="375px" alt="uitomst screenshot 3">
+  Scherm 3 gaat over het hamburger menu. Deze komt vanaf boven naar beneden rollen. Daarin zitten nog meer uitklappende menus die dezelfde motion hebben. Ik ben erg blij dat het werkt, maar toch voelt het niet perfect doordat de transition niet even lang is als hij opent en dicht gaat. Het kan alleen niet anders zonder vaste eenheden te gebruiken. Ik heb gekozen om daarom relatieve units te gebruiken zodat het uitbereiden van deze menu's makkelijk mogelijk is. Er waren veel problemen tijdens het maken van dit menu, waarbij de peiltjes verkeerd om eindigden als je een ander menu opende, doordat ze elkaar sloten maar de classes met toggle werkten. Dit heb ik gelijk kunnen oplossen toen ik deze code verbeterde zodat ik aria attributen kon toevoegen.
+  ---
+
+  <img src="readme-images/pagina4.jpg" width="375px" alt="uitomst screenshot 4">
+  Ik ben tevreden over hoe het filter systeem er uit ziet. Toch lijkt het mij leuk om in de toekomst een systeem te maken dat daadwerlijk functioneel is. Dit is nu helaas niet het geval, omdat ik geen research heb gedaan naar de benodigde technieken. De uitklap menu's werken voor nu prima, zonder een transition op de input velden. De img's hebben wel een transition. Als ik meer tijd had had ik wel graag ook een vloeiende transition willen zetten zodat het hetzelfde gevoel geeft als het hoofd hamburger menu en de daarin zittende sub menu's. Voor nu voldoet dit gelukkig, wat mij betreft. 
+  ---
+
+  <img src="readme-images/pagina5.jpg" width="375px" alt="uitomst screenshot 5">
+Deze pagina heeft een grote verandering door gemaakt waardoor hij op gebied van gebruiksvriendelijkheid en accessibility een stuk verbeterd is. Op de originele website moet er namelijk worden gescrollt om de achterkant van een shirt te bekijken als een soort carrousel. Dit is iets wat niet accessible genoeg is wat mij betreft zonder het toevoegen van extra knoppen voor de besturing. Ik heb dit hele systeem aangepast waarbij er een duidelijke tekstuele weergave is van voor- of achterkant. Hierdoor is er ook geen verwarring mogelijk voor mensen zonder beperkingen. Soms lijken de voor en achter designs op elkaar waardoor het voor iedereen lastig is.
+---
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  - Korte samenvatting van samengaande punten van het lijstje plus afbeeldingen van de vorige kop:
+    - Semantisch correcter maken van de pagina's aan de hand van h1 toevoegen, aria labels en duidelijkere a's en img's met alt teksten.
+    - Het gebruiken van het grid, wat verbazingwekkend makkelijk werkte.
+    - Het maken van een uitrollend hamburger menu.
+    - Het laten werken van alle bijpassende aria labels.
+    - Het accessible maken voor mensen met hoog contrast of verminderde animatie instellingen.
+    - Styling op basis van attributen; minder classes.
+    - Het leren over custom properties.
+  <img src="readme-images/verhoogdcontrast.png" width="375px" alt="top">
+  *zie afbeelding voor verhoogd contrast*
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  - Het is mij niet gelukt om een werkend filter systeem te maken. Ik heb niet geleerd hoe dit moet.
+  - Het is mij niet gelukt om enkele kleine niet werkende functionaliteiten werkend te krijgen.
+  - Het was lastig om sommige bugs te vinden...
+  - Tot mijn grote verdriet heb ik geen tijd gehad om een dark mode te maken :-(
+  - Eigenlijk zou ik graag wat onderdelen die nu niet op de gewenste plek in de HTML staan willen veranderen. Helaas heb ik door te weinig tijd geen tijd om dit meer te doen.
+  <img src="readme-images/sc8.png" width="375px" alt="bummer">
 </details>
 
 

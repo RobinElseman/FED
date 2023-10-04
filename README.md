@@ -256,6 +256,7 @@ De volgende punten van positieve feedback werden gedeeld met mij...
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
+  
   <img src="readme-images/pagina1.png" width="375px" alt="uitomst screenshot 1">
 
   Een van de pagina's waar ik heel tevreden over ben. De pagina miste in het origineel een h1. Deze heb ik onzichtbaar toegevoegd, een daarnaast was er over de grote button met afbeelding totaal niets bekend voor de screenreader. Hier heb ik een figure van gemaakt met een duidelijkere bestemming van de link. Het is mij goed bevallen om een afbeelding mee te laten schalen met verschillende schermgroottes.

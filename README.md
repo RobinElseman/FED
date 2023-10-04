@@ -59,16 +59,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-    + De headings hebben een logische volgorde. Dit is dus een positief iets om niet te veranderen in de nieuwe verbeterde versie van deze site.
-    + Accessibility wordt pas laat verteld, dit kan anders. Wat mij betreft is de site opzichzelf al accessible en hoeven er hier geen settings voor worden aangepast. Sowieso moet hier eerst aandacht aan worden gevestigd zodat de gebruiker hier gelijk gebruik van kan maken als dat nodig is.
-    + Links hebben een goede beschrijving over de bestemming. Dit is dus een positieve eigenschap van de website waar niet veel aan hoeft worden veranderd.
-    + Voor screenreaders is het onduidelijk dat er onder shop meerdere subcategoriëen zijn. Hetzeflde geldt voor customer service. Dit is voor mensen die deze optie gebruiken extreem onhandig. Hier moet een duidelijk onderscheid in komen.
-    + Focus punten op de site kan worden verbeterd. Als er door de website wordt genavigeerd is het vaak lastig tot niet duidelijk waar de focus ligt. Hier is dus ruimte voor verbetering.
-    + De website werkt op alle oriëntaties. Dit is ook een positieve eigenschap van een goede responsive website.
-    + Horizontale scrolls worden niet gebruikt. Dit wil ik graag zo houden, omdat dit vaak niet heel accessible is.
-    + Buttons kunnen misschien iets groter, voor mensen met motorische beperkingen. Dat is iets waar ik aandacht aan ga besteden op de nieuwe verbeterde website.
-    + Scroll ruimte is voldoende aanwezig.
-    + Alt teksten zijn niet voldoende. Hier zal ik dus ook veel meer aandacht aan geven. Voor mensen die afhankelijk zijn van deze altteksten is het zeer hinderlijk om dit niet goed te benutten.
+  <ul>
+  <li>De headings hebben een logische volgorde. Dit is dus een positief iets om niet te veranderen in de nieuwe verbeterde versie van deze site.</li>
+  <li>Accessibility wordt pas laat verteld, dit kan anders. Wat mij betreft is de site opzichzelf al accessible en hoeven er hier geen settings voor worden aangepast. Sowieso moet hier eerst aandacht aan worden gevestigd zodat de gebruiker hier gelijk gebruik van kan maken als dat nodig is.</li>
+  <li>Links hebben een goede beschrijving over de bestemming. Dit is dus een positieve eigenschap van de website waar niet veel aan hoeft worden veranderd.</li>
+  <li>Voor screenreaders is het onduidelijk dat er onder shop meerdere subcategoriëen zijn. Hetzeflde geldt voor customer service. Dit is voor mensen die deze optie gebruiken extreem onhandig. Hier moet een duidelijk onderscheid in komen.</li>
+  <li>Focus punten op de site kan worden verbeterd. Als er door de website wordt genavigeerd is het vaak lastig tot niet duidelijk waar de focus ligt. Hier is dus ruimte voor verbetering.</li>
+  <li>De website werkt op alle oriëntaties. Dit is ook een positieve eigenschap van een goede responsive website.</li>
+  <li>Horizontale scrolls worden niet gebruikt. Dit wil ik graag zo houden, omdat dit vaak niet heel accessible is.</li>
+  <li>Buttons kunnen misschien iets groter, voor mensen met motorische beperkingen. Dat is iets waar ik aandacht aan ga besteden op de nieuwe verbeterde website.</li>
+  <li>Scroll ruimte is voldoende aanwezig.</li>
+  <li>Alt teksten zijn niet voldoende. Hier zal ik dus ook veel meer aandacht aan geven. Voor mensen die afhankelijk zijn van deze altteksten is het zeer hinderlijk om dit niet goed te benutten.</li>
+            
+  </ul>
   <img src="readme-images/cl1.jpg" width="375px" alt="Checklist accessibility page 1">
   <img src="readme-images/cl2.jpg" width="375px" alt="Checklist accessibility page 2">
   <img src="readme-images/cl3.jpg" width="375px" alt="Checklist accessibility page 3">

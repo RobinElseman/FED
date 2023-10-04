@@ -112,33 +112,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Meeting met studentassistent
   Positieve feedback:
-  <ul>
-  <li>
-  De HTML van de website zag er goed en netjes uit, daar was ze tevreden over.
 
+  De HTML van de website zag er goed en netjes uit, daar was ze tevreden over.
   - Toch moet ik wel focussen op de structuur...
     - Dit is belangrijk voor de screenreader en tab volgorde.
     - Daarnaast ook voor het begrijpen en aanpassen en stijlen van de elementen.
-  </li>
 
   Verbeter feedback:
-  <li>
   In de CSS was er nog ruimte voor verbetering.
-
   - De volgende verbeterpunten heeft ze toen benoemd...
     - Vergeet niet om gebruik te maken van de custom properties in CSS. Ik heb er toen bewust voor gekozen om deze later in te voegen omdat mij dit handiger en overzichtelijk leek.
     - Daarnaast kreeg ik ook te horen dat er nog verbetering mogelijk was bij de alt teksten van img's bijvoorbeeld. Ik ben het eens dat deze in het eindproduct moeten komen. Dit heb ik alleen in week 1 nog niet geregeld. Eerst lag mijn focus bij het werkend maken van de website.
-  </li>
 
-  Vragen
-  <li>
+  Vragen:
   Ik heb tijdens het gesprek met de studentassistent ook verschillende vragen kunnen stellen.
-
   - Deze vragen gingen over...
     - Het correct indelen van de HTML en de daarbij horende nav, header en main elementen. Ik heb gevraagd waar het het beste is om deze te plaatsen. Samen zijn wij tot de conclusie gekomen dat sommige elementen niet in de nav hoeven omdat deze in dezelfde pagina openen. Hier heb ik het over de shopping cart, search icon en hamburger menu. Deze openen niet in een nieuw tabblad en daarom heb ik deze ook niet in de nav gestopt. De items in het hamburger menu heb ik daarintegen wel in de nav gezet.
-  </li>
-  </ul>
-
 </details>
 
 

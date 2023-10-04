@@ -120,8 +120,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Dit is belangrijk voor de screenreader en tab volgorde.
     - Daarnaast ook voor het begrijpen en aanpassen en stijlen van de elementen.
   </li>
-  
-    <li>
+
+  <li>
   In de CSS was er nog ruimte voor verbetering.
 
   - De volgende verbeterpunten heeft ze toen benoemd...

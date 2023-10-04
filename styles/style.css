@@ -1,3 +1,4 @@
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -36,6 +37,7 @@
 	--font-size-default: 1em;
 }
 
+/* Bron: chatGPT https://chat.openai.com/*/
 @media (prefers-reduced-motion: reduce) {
 	:root {
 	--transition-time: 0s;
@@ -49,9 +51,16 @@
 	}
 }
 
+/* Bron: https://mgearon.com/css/text-selection-color/#:~:text=%3A%3Aselection%20%E2%80%93%20Change%20text%20selection%20color&text=The%20CSS%20pseudo%2Delement%20%3A%3A,background%2Dcolor */
+::selection {
+	background: black;
+	color: white;
+}
+
 /****************/
 /* JOUW STYLING */
 /****************/
+/* Bron: gesprek met studentassistent */
 h1 {
 	position: absolute;
 	left: -1000000vw;
@@ -189,6 +198,7 @@ header nav > ul > li > a {
 	text-decoration: none;
 }
 
+/* Bron: Cubic bezier generator https://cubic-bezier.com/ */
 header nav ul li ul:first-of-type {
 	height: auto;
 	max-height: 0;
@@ -450,6 +460,7 @@ footer section:nth-of-type(3) ul li a {
 	height: 2em;
 }
 
+/* Bron: MDN https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio */
 footer section:nth-of-type(3) ul li a img {
 	height: 0.75em;
 	width: auto;
@@ -556,7 +567,7 @@ footer section:nth-of-type(3) {
 
 
 
-
+/* Bron: Grid Garden https://cssgridgarden.com/#nl */
 
 .tees main > ul {
 	display: grid;
@@ -583,6 +594,7 @@ footer section:nth-of-type(3) {
 	color: black;
 }
 
+/* Bron: MDN https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap */
 .tees main ul li a h3 {
 	font-size: var(--font-size-default);
 	margin-right: var(--padding-small);
@@ -640,6 +652,7 @@ footer section:nth-of-type(3) {
 	display: block;
 }
 
+/* Bron: MDN https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color */
 .tees main section:nth-of-type(2) form ul li input {
 	accent-color: black;
 }
@@ -911,6 +924,7 @@ body.tees main section:first-of-type.filterOpen {
 	padding-right: var(--padding-big);
 }
 
+/* Bron: hulp van medestudent Laurens */
 @media only screen and (min-width: 600px) {
 	.shirt main {
 		display: grid;

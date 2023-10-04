@@ -118,6 +118,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - Dit is belangrijk voor de screenreader en tab volgorde.
     - Daarnaast ook voor het begrijpen en aanpassen en stijlen van de elementen.
 
+ <img src="readme-images/1.png" width="375px" alt="Goede HTML code">
+
 ---
   Verbeter feedback:
 
@@ -125,6 +127,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De volgende verbeterpunten heeft ze toen benoemd...
     - Vergeet niet om gebruik te maken van de custom properties in CSS. Ik heb er toen bewust voor gekozen om deze later in te voegen omdat mij dit handiger en overzichtelijk leek.
     - Daarnaast kreeg ik ook te horen dat er nog verbetering mogelijk was bij de alt teksten van img's bijvoorbeeld. Ik ben het eens dat deze in het eindproduct moeten komen. Dit heb ik alleen in week 1 nog niet geregeld. Eerst lag mijn focus bij het werkend maken van de website.
+
+     <img src="readme-images/2.png" width="375px" alt="De vergeten custom properties">
 
 ---
   Vragen:
@@ -148,6 +152,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ik merkte tijdens het programmeren en vooral testen dat het het beste was om als er een tweede menu wordt geopend, de vorige dicht te doen. In het kader van user experience is dit vaak een geprefereerde optie. Het enige was dat, omdat ik toggle states gebruikte voor de classList in JavaScript, dat de peiltjes van de buttons verkeerd konden staan ten opzichte van hun daadwerkelijke status. Daarnaast hield ik nog geen rekening met de aria labels die hierbij komen kijken. 
 
+   <img src="readme-images/3.png" width="375px" alt="De verbeterde JavaScript vanwege de toggle states">
 
   ### Meeting met studentassistent
   Positieve feedback:
@@ -162,6 +167,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De volgende verbeterpunten heeft ze toen benoemd...
     - Ik heb in week 2 nog steeds niet gewerkt aan het invullen van de alt teksten van de img's. Hier werd ik nogmaals op geattendeerd.
     - Daarnaast werd ik ik week 2 ook gewezen op het feit dat dit bestand, het README.md nog een beetje achterliep. Ik ben het er mee eens dat ik dat was beter moet bijhouden in de toekomst. Het later invullen van een document als dit kost namelijk veel tijd. Als je het op het moment invult is het makkelijker om het goed te verwerken.
+
+       <img src="readme-images/4.png" width="375px" alt="Aangevulde README.md bestand">
 
 ---
   Vragen:
@@ -224,6 +231,9 @@ Daarnaast heb ik ook een aantal dingen dus verbeterd en daar ben ik erg tevreden
 
   Op het laatste moment ben ik ook aan de slag gegaan om media querys te maken om zo mensen die graag minder motion of meer contrast willen te voorzien in hun behoeftes. Het was een stuk makkelijker dan ik dacht en ik ben erg blij dat dit in de opdracht zit verwerkt.
 
+  <img src="readme-images/5.png" width="375px" alt="CSS met media query's voor mensen met andere systeem instellingen">
+ 
+
 
   ### Meeting met studentassistent
   Positieve feedback:
@@ -237,6 +247,8 @@ De volgende punten van positieve feedback werden gedeeld met mij...
 
   In de code was er nog ruimte voor verbetering.
   - Pas de CSS styling aan op de aria labels van een HTML element. Dit is iets waar ik dus zeker nog mee aan de slag ben gegaan. Ik ben echt heel content met het feit dat dit werkt. Hierdoor is de code in het Javascript bestand een stuk rustiger en overzichtelijker.
+
+    <img src="readme-images/6.png" width="375px" alt="CSS styling aan de hand van HTML attributen">
 
 ---
   Vragen:
@@ -326,8 +338,23 @@ Deze pagina heeft een grote verandering door gemaakt waardoor hij op gebied van 
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. [bron 1 selection](https://mgearon.com/css/text-selection-color/#:~:text=%3A%3Aselection%20%E2%80%93%20Change%20text%20selection%20color&text=The%20CSS%20pseudo%2Delement%20%3A%3A,background%2Dcolor)
+  2. [bron 2 chatgpt](https://chat.openai.com/)
+  3. [bron 3 cubic bezier](https://cubic-bezier.com/)
+  4. [bron 4 aspect ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)
+  5. [bron 5 grid](https://cssgridgarden.com/#nl)
+  6. [bron 6 overflow wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap)
+  7. [bron 7 accent color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)
+  8. [bron 8 aria label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+  9. [bron 9 aria expanded](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-expanded)
+  10. [bron 10 aria controls](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls)
+  11. [bron 11 aria hidden](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden)
+  12. [bron 12 title](https://www.geeksforgeeks.org/html-title-attribute/)
+  13. [bron 13 aria current](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current)
+  14. [bron 14 forms](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+  15. [bron 15 clear input fields](https://linuxhint.com/clear-input-fields-javascript/)
+  16. [bron 16 aria](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+  17. [bron 17 attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+  18. [bron 18 end animation](https://stackoverflow.com/questions/31503356/how-can-i-remove-a-class-when-the-animation-has-ended)
+  19. Docent, studenten en studentassistenten
 </details>

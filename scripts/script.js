@@ -1,3 +1,7 @@
+// Bron: MDN https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+// Bron: ChatGPT https://chat.openai.com/
+// Bron: MDN https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+
 // JavaScript Document
 var searchIcon = document.querySelector("header>ul li:first-of-type button");
 var searchIconImg = document.querySelector("header>ul li:first-of-type button img");
@@ -38,6 +42,7 @@ function crossFunction() {
     };
 };
 
+// Bron: Linus hint https://linuxhint.com/clear-input-fields-javascript/
 //// search bar search clear
 searchBarButton.addEventListener("click", function () { clearInputFunction() });
 function clearInputFunction() {
@@ -327,6 +332,7 @@ if (document.querySelector("body").classList.contains("shirt")) {
         }
     }
 
+    // Bron: Stackoverflow https://stackoverflow.com/questions/31503356/how-can-i-remove-a-class-when-the-animation-has-ended
     var addToCartButton = document.querySelector(".shirt main section:nth-of-type(3) button:first-of-type");
     var cartImg = document.querySelector("header ul:first-of-type li:nth-of-type(2) button img");
     addToCartButton.addEventListener("click", function () { addToCartFunction() });

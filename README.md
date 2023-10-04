@@ -121,7 +121,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ---
   Verbeter feedback:
 
-  In de CSS was er nog ruimte voor verbetering.
+  In de code was er nog ruimte voor verbetering.
   - De volgende verbeterpunten heeft ze toen benoemd...
     - Vergeet niet om gebruik te maken van de custom properties in CSS. Ik heb er toen bewust voor gekozen om deze later in te voegen omdat mij dit handiger en overzichtelijk leek.
     - Daarnaast kreeg ik ook te horen dat er nog verbetering mogelijk was bij de alt teksten van img's bijvoorbeeld. Ik ben het eens dat deze in het eindproduct moeten komen. Dit heb ik alleen in week 1 nog niet geregeld. Eerst lag mijn focus bij het werkend maken van de website.
@@ -149,23 +149,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik merkte tijdens het programmeren en vooral testen dat het het beste was om als er een tweede menu wordt geopend, de vorige dicht te doen. In het kader van user experience is dit vaak een geprefereerde optie. Het enige was dat, omdat ik toggle states gebruikte voor de classList in JavaScript, dat de peiltjes van de buttons verkeerd konden staan ten opzichte van hun daadwerkelijke status. Daarnaast hield ik nog geen rekening met de aria labels die hierbij komen kijken. 
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  ### Meeting met studentassistent
+  Positieve feedback:
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  De HTML van de website zag er nog steeds goed en netjes uit, daar was ze nog steeds tevreden over.
+  - Ondanks dit mooie compliment was ik alsnog vaak bezig met een goede indeling van HTML te vinden waarin alles semantisch correct en logisch was. Naarmate ik doorging met het programmeren kwam ik telkens weer tegen nieuwe problemen aan waardoor het beter was om een andere indeling van HTML te gebruiken. Hierdoor gebeurde het wel eens dat ik delen even helemaal opnieuw moest doen.
 
+---
+  Verbeter feedback:
 
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  In de code was er nog ruimte voor verbetering.
+  - De volgende verbeterpunten heeft ze toen benoemd...
+    - Ik heb in week 2 nog steeds niet gewerkt aan het invullen van de alt teksten van de img's. Hier werd ik nogmaals op geattendeerd.
+    - Daarnaast werd ik ik week 2 ook gewezen op het feit dat dit bestand, het README.md nog een beetje achterliep. Ik ben het er mee eens dat ik dat was beter moet bijhouden in de toekomst. Het later invullen van een document als dit kost namelijk veel tijd. Als je het op het moment invult is het makkelijker om het goed te verwerken.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+---
+  Vragen:
+
+  Ik heb tijdens het gesprek met de studentassistent ook verschillende vragen kunnen stellen.
+  - Deze vragen gingen over...
+    - Het scrollen tijdens het typen en zoeken van een zoek opdracht bij het zoek venster van de website. Ik kreeg feedback van de studentassistent dat het niet erg was als je kon scrollen. Dit heb ik daarom dus ook niet uitgewerkt. Later sprak ik de docent hierover en die vertelde mij dat het zeker wel beter is om dit scrollen uit te zetten. Ik heb daarom gewerkt aan een passende oplossing die scrollen in de body onmogelijk maakt als het search deel van de header open is.
 
 </details>
 

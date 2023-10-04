@@ -3,11 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Robin Elseman">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Stüssy EU – Worldwide Since 1980 – Stüssy Europe</title>
+	<title>Dizze Stock Tee – Worldwide Since 1980 – Stüssy Europe</title>
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/icon.jpeg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;600&display=swap" rel="stylesheet">
@@ -84,7 +84,7 @@
 	<main>
 		<div></div>
 		<section>
-			<img src="/images/shirt.webp" alt="">
+			<img src="images/shirt.webp" alt="">
 			<button class="activeShirt">Front</button>
 			<button class="inactiveShirt">Back</button>
 		</section>
@@ -93,13 +93,12 @@
 			<p>€48</p>
 			<p>Black</p>
 			<ul>
-				<li><a href=""><img src="/images/shirt.webp" alt=""></a></li>
-				<li><a href=""><img src="/images/shirt.webp" alt=""></a></li>
-				<li><a href=""><img src="/images/shirt.webp" alt=""></a></li>
-				<li><a href=""><img src="/images/shirt.webp" alt=""></a></li>
+				<li><a href=""><img src="images/shirt.webp" alt=""></a></li>
+				<li><a href=""><img src="images/shirt.webp" alt=""></a></li>
+				<li><a href=""><img src="images/shirt.webp" alt=""></a></li>
+				<li><a href=""><img src="images/shirt.webp" alt=""></a></li>
 			</ul>
-			<form action="">
-
+			<form action="#" method="get">
 				<label for="s"><input type="radio" value="s" name="size" id="s">S</label>
 				<label for="m"><input type="radio" value="m" name="size" id="m">M</label>
 				<label for="l"><input type="radio" value="l" name="size" id="l">L</label>
@@ -108,62 +107,72 @@
 			</form>
 			<p>Free shipping in US for orders over $200 USD</p>
 			<ul>
-				<button>Details<img src="images/menuarrow.svg" alt=""></button>
+
 				<li>
-					<p>Shortsleeve crewneck tee.</p>
-					<ul>
-						<li>Screenprinted graphics</li>
-						<li>Ribbed collar</li>
-						<li>Oversized fit</li>
-						<li>Unisex</li>
-						<li>100% cotton</li>
-						<li>Imported</li>
-					</ul>
+					<button aria-expanded="false">Details<img src="images/menuarrow.svg" alt=""></button>
+					<div aria-hidden="true">
+						<p>Shortsleeve crewneck tee.</p>
+						<ul>
+							<li>Screenprinted graphics</li>
+							<li>Ribbed collar</li>
+							<li>Oversized fit</li>
+							<li>Unisex</li>
+							<li>100% cotton</li>
+							<li>Imported</li>
+						</ul>
+					</div>
 				</li>
-				<button>Size guide<img src="images/menuarrow.svg" alt=""></button>
+
 				<li>
-					<table>
-						<tr>
-							<th>Size:</th>
-							<th>S</th>
-							<th>M</th>
-							<th>L</th>
-							<th>XL</th>
-							<th>XXL</th>
-						</tr>
-						<tr>
-							<th>Chest</th>
-							<td>49.5</td>
-							<td>54.6</td>
-							<td>59.7</td>
-							<td>64.8</td>
-							<td>69.8</td>
-						</tr>
-						<tr>
-							<th>Length</th>
-							<td>71.1</td>
-							<td>73.7</td>
-							<td>76.2</td>
-							<td>78.7</td>
-							<td>81.3</td>
-						</tr>
-						<tr>
-							<th>Sleeve</th>
-							<td>22.9</td>
-							<td>24.1</td>
-							<td>25.4</td>
-							<td>26.7</td>
-							<td>26.7</td>
-						</tr>
-					</table>
-					<img src="/images/sizes.webp" alt="">
-		
+					<button aria-expanded="false">Size guide<img src="images/menuarrow.svg" alt=""></button>
+					<div aria-hidden="true">
+						<table>
+							<tr>
+								<th>Size:</th>
+								<th>S</th>
+								<th>M</th>
+								<th>L</th>
+								<th>XL</th>
+								<th>XXL</th>
+							</tr>
+							<tr>
+								<th>Chest</th>
+								<td>49.5</td>
+								<td>54.6</td>
+								<td>59.7</td>
+								<td>64.8</td>
+								<td>69.8</td>
+							</tr>
+							<tr>
+								<th>Length</th>
+								<td>71.1</td>
+								<td>73.7</td>
+								<td>76.2</td>
+								<td>78.7</td>
+								<td>81.3</td>
+							</tr>
+							<tr>
+								<th>Sleeve</th>
+								<td>22.9</td>
+								<td>24.1</td>
+								<td>25.4</td>
+								<td>26.7</td>
+								<td>26.7</td>
+							</tr>
+						</table>
+						<img src="images/sizes.webp" alt="">
+					</div>
 				</li>
-				<button>Shipping<img src="images/menuarrow.svg" alt=""></button>
+
 				<li>
-					<p>Standard $7 (3-7 business days)</p>
+					<button aria-expanded="false">Shipping<img src="images/menuarrow.svg" alt=""></button>
+					<div aria-hidden="true">
+						<p>Standard $7 (3-7 business days)</p>
+					</div>
 				</li>
-				<a href="">Chat</a>
+				<li>
+					<a href="#">Chat</a>
+				</li>
 			</ul>
 		</section>
 		<section>
@@ -194,14 +203,16 @@
 		</section>
 		<section>
 			<ul>
-				<li><a title="Instagram profile" target="_blank" href="https://www.instagram.com/stussy/"><img src="images/insta.svg" alt="Instagram icon"></a>
+				<li><a aria-label="Instagram profile" title="Instagram profile" target="_blank"
+						href="https://www.instagram.com/stussy/"><img src="images/insta.svg" alt=""></a>
 				</li>
-				<li><a title="Vimeo profile" target="_blank" href="https://vimeo.com/stussy"><img src="images/vimeo.svg" alt="Vimeo icon"></a></li>
-				<li><a title="WeChat profile" target="_blank"
+				<li><a aria-label="Vimeo profile" title="Vimeo profile" target="_blank"
+						href="https://vimeo.com/stussy"><img src="images/vimeo.svg" alt=""></a></li>
+				<li><a aria-label="WeChat profile" title="WeChat profile" target="_blank"
 						href="https://www.stussy.com/pages/wechat?_gl=1*kt8da4*_ga*MTcxMzM5OTUwNC4xNjg3Nzc1Mjgw*_ga_TY9FR86WDP*MTY5NTI4MDg1Ny44LjEuMTY5NTI4MTc2OS42MC4wLjA."><img
-							src="images/wechat.svg" alt="Wechat icon"></a></li>
-				<li><a title="Weibo profile" target="_blank" href="https://www.weibo.com/stussyofficial"><img src="images/weibo.svg"
-							alt="Weibo icon"></a>
+							src="images/wechat.svg" alt=""></a></li>
+				<li><a aria-label="Weibo profile" title="Weibo profile" target="_blank"
+						href="https://www.weibo.com/stussyofficial"><img src="images/weibo.svg" alt=""></a>
 				</li>
 			</ul>
 			<p>© 2023 STÜSSY</p>

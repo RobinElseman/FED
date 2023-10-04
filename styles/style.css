@@ -22,19 +22,37 @@
 	/* startje */
 	--color-text: #111;
 	--color-background: #eee;
+	--padding-small: .625em;
+	--padding-big: 1.25em;
+	--element-height: 3.75em;
+	--border-color: rgb(245 245 245);
+	--border-default: 1px solid var(--border-color);
+	--transition-time: .25s;
+	--transition-time-2: 2s;
+	--transition-default: all var(--transition-time) cubic-bezier(.215, .61, .355, 1);
+	--font-weight-thin: 100;
+	--font-weight-medium: 300;
+	--font-weight-heavy: 600;
+	--font-size-default: 1em;
 }
 
+@media (prefers-reduced-motion: reduce) {
+	:root {
+	--transition-time: 0s;
+	--transition-time-2: 0s;
+	}
+}
 
-
-
+@media (prefers-contrast: more) {
+	:root {
+	--border-color: black;
+	}
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
-
-.shirt h1,
-.index h1,
-.tees h1 {
+h1 {
 	position: absolute;
 	left: -1000000vw;
 }
@@ -42,9 +60,9 @@
 
 /* HEADER */
 header {
-	height: 3.75em;
+	height: var(--element-height);
 	width: 100%;
-	border-bottom: 1px solid rgb(245 245 245);
+	border-bottom: var(--border-default);
 	background-color: white;
 	display: flex;
 	justify-content: space-between;
@@ -55,30 +73,30 @@ header {
 	z-index: 9999;
 }
 
-header>a {
-	margin-left: .625em;
+header > a {
+	margin-left: var(--padding-small);
 	display: flex;
-	height: 3.75em;
+	height: var(--element-height);
 	width: fit-content;
 	justify-content: center;
 	align-items: center;
 }
 
-header>a:first-of-type img {
+header > a:first-of-type img {
 	height: 2.5em;
 }
 
-header>ul {
+header > ul {
 	list-style: none;
 	display: flex;
 }
 
-header>ul li {
-	height: 3.75em;
+header > ul li {
+	height: var(--element-height);
 	width: auto;
 }
 
-header>ul li button {
+header > ul li button {
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -87,13 +105,13 @@ header>ul li button {
 	border: none;
 }
 
-header>ul li button img {
-	height: 1.25em;
-	margin: 0 .625em;
+header > ul li button img {
+	height: var(--padding-big);
+	margin: 0 var(--padding-small);
 }
 
 header > nav {
-	margin-top: 3.75em;
+	margin-top: var(--element-height);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -103,19 +121,19 @@ header > nav {
 	background-color: white;
 	width: 100%;
 	height: 100vh;
-	transition: all .25s cubic-bezier(.215, .61, .355, 1);
+	transition: var(--transition-default);
 }
 
-header>nav.menuOpen {
+header > nav.menuOpen {
 	max-height: 100vh;
 }
 
-header nav ul li>button {
-	padding-left: .625em;
+header nav ul li > button {
+	padding-left: var(--padding-small);
 	width: 100%;
 	text-align: left;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: var(--font-weight-thin);
 	border: none;
 	background-color: transparent;
 	display: flex;
@@ -123,14 +141,14 @@ header nav ul li>button {
 	align-items: center;
 }
 
-header nav ul li>button img {
-	height: .625em;
-	margin-right: .625em;
+header nav ul li > button img {
+	height: var(--padding-small);
+	margin-right: var(--padding-small);
 	transform: rotate(0deg);
-	transition: all .25s cubic-bezier(.215, .61, .355, 1);
+	transition: var(--transition-default);
 }
 
-header nav ul li>button img.openTurnArrow {
+header nav ul li > button img.openTurnArrow {
 	transform: rotate(-180deg);
 }
 
@@ -139,33 +157,33 @@ header nav ul li ul {
 }
 
 header nav ul li ul li {
-	margin-bottom: .625em;
-	margin-left: 1.25em;
+	margin-bottom: var(--padding-small);
+	margin-left: var(--padding-big);
 }
 
 header nav ul li ul li a {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 }
 
-header nav>ul li button {
+header nav > ul li button {
 	line-height: 3em;
-	font-size: 1em;
+	font-size: var(--font-size-default);
 }
 
-header nav>ul>li {
-	border-bottom: 1px solid grey;
+header nav > ul > li {
+	border-bottom: var(--border-default);
 }
 
-header nav>ul>li>a {
+header nav > ul > li > a {
 	display: block;
 	text-transform: uppercase;
 	height: 100%;
 	line-height: 3em;
-	padding-left: .625em;
-	padding-right: .625em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
 	width: 100%;
 	color: black;
 	text-decoration: none;
@@ -175,9 +193,9 @@ header nav ul li ul:first-of-type {
 	height: auto;
 	max-height: 0;
 	overflow: hidden;
-	transition-duration: 2s;
+	transition-duration: var(--transition-time-2);
 	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-	transition-delay: 0;
+	transition-delay: 0s;
 	transition-property: all;
 }
 
@@ -188,15 +206,15 @@ header nav ul li ul:first-of-type.listGroupOpen {
 }
 
 header section:first-of-type {
-	height: 3.75em;
+	height: var(--element-height);
 	width: 100vw;
-	padding-left: .625em;
-	padding-right: .625em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
 	background-color: white;
 	position: fixed;
-	top: 3.75em;
+	top: var(--element-height);
 	left: 0;
-	border-bottom: 1px solid rgb(245 245 245);
+	border-bottom: var(--border-default);
 	display: flex;
 	align-items: center;
 	opacity: 0;
@@ -204,16 +222,16 @@ header section:first-of-type {
 }
 
 header section:first-of-type img {
-	height: 1.25em;
+	height: var(--padding-big);
 }
 
 header section:first-of-type input {
-	margin-left: 1.25em;
+	margin-left: var(--padding-big);
 	width: 100%;
 	border: none;
 	background-color: transparent;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 	height: 100%;
 	color: black;
 }
@@ -225,10 +243,10 @@ header section:first-of-type input:focus {
 header section:first-of-type button {
 	background-color: transparent;
 	border: none;
-	margin-left: .625em;
+	margin-left: var(--padding-small);
 	text-transform: uppercase;
 	color: black;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 }
 
 
@@ -249,7 +267,7 @@ header section:nth-of-type(2) {
 	height: 100vh;
 	width: 100vw;
 	background-color: white;
-	transition: right .25s cubic-bezier(.215, .61, .355, 1);
+	transition: right var(--transition-time) cubic-bezier(.215, .61, .355, 1);
 }
 
 header section:nth-of-type(2).shopCartOpen {
@@ -257,26 +275,26 @@ header section:nth-of-type(2).shopCartOpen {
 }
 
 header section:nth-of-type(2) div {
-	height: 3.75em;
+	height: var(--element-height);
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid rgb(172, 172, 172);
+	border-bottom: var(--border-default);
 }
 
 header section:nth-of-type(2) div h2 {
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: var(--font-size-default);
 	text-decoration: underline;
-	margin-left: .625em;
+	margin-left: var(--padding-small);
 }
 
 header section:nth-of-type(2) div button {
 	height: 100%;
 	display: flex;
-	padding-left: .625em;
-	padding-right: .625em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
 	align-items: center;
 	justify-content: center;
 	background-color: transparent;
@@ -284,16 +302,16 @@ header section:nth-of-type(2) div button {
 }
 
 header section:nth-of-type(2) div button img {
-	height: 1.25em;
+	height: var(--padding-big);
 }
 
-header section:nth-of-type(2)>button {
+header section:nth-of-type(2) > button {
 	position: absolute;
 	bottom: 0;
 	background-color: black;
 	text-align: center;
-	font-size: 1em;
-	height: 3.75em;
+	font-size: var(--font-size-default);
+	height: var(--element-height);
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -301,31 +319,31 @@ header section:nth-of-type(2)>button {
 	color: white;
 	text-transform: uppercase;
 	border: none;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 }
 
 header section:nth-of-type(2) p {
-	padding-left: .625em;
-	padding-right: .625em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 	font-size: .75em;
 }
 
 header section:nth-of-type(2) p:first-of-type {
-	margin-top: 1.25em;
+	margin-top: var(--padding-big);
 }
 
 /* MAIN */
 main {
-	padding-top: 3.75em;
+	padding-top: var(--element-height);
 }
 
 main section:first-of-type {
 	width: 100vw;
-	padding: .625em;
-	height: calc(100vh - 3.75em);
-	border-bottom: 1px solid rgb(245 245 245);
+	padding: var(--padding-small);
+	height: calc(100vh - var(--element-height));
+	border-bottom: var(--border-default);
 }
 
 main section:first-of-type a {
@@ -347,9 +365,9 @@ main section:first-of-type figure img {
 main section:first-of-type a h2 {
 	background-color: black;
 	text-align: center;
-	padding-left: .625em;
-	padding-right: .625em;
-	font-size: 1em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
+	font-size: var(--font-size-default);
 	height: 2.5em;
 	width: 100%;
 	display: flex;
@@ -359,7 +377,7 @@ main section:first-of-type a h2 {
 	text-transform: uppercase;
 }
 
-main>div:first-of-type {
+main > div:first-of-type {
 	position: fixed;
 	background-color: #111;
 	z-index: 1;
@@ -369,10 +387,10 @@ main>div:first-of-type {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	transition: all .25s cubic-bezier(.215, .61, .355, 1);
+	transition: var(--transition-default);
 }
 
-main>div:first-of-type.activeBackground {
+main > div:first-of-type.activeBackground {
 	position: fixed;
 	background-color: #111;
 	z-index: 1;
@@ -384,25 +402,25 @@ main>div:first-of-type.activeBackground {
 	pointer-events: all;
 }
 
-.tees main>section:first-of-type {
-	height: 3.75em;
+.tees main > section:first-of-type {
+	height: var(--element-height);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0;
 }
 
-.tees main>section:first-of-type h2 {
+.tees main > section:first-of-type h2 {
 	text-transform: uppercase;
-	font-size: 1em;
-	margin-left: .625em;
+	font-size: var(--font-size-default);
+	margin-left: var(--padding-small);
 }
 
-.tees main>section:first-of-type button {
+.tees main > section:first-of-type button {
 	height: 100%;
 	margin: 0;
-	padding-left: .625em;
-	padding-right: .625em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
 	text-transform: uppercase;
 	background-color: transparent;
 	border: none;
@@ -441,35 +459,35 @@ footer section:nth-of-type(3) ul li a img {
 
 
 footer section:first-of-type {
-	padding-left: .625em;
-	padding-right: .625em;
-	padding-top: 1.25em;
-	padding-bottom: 1.25em;
-	border-bottom: 1px solid rgb(245 245 245);
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
+	padding-top: var(--padding-big);
+	padding-bottom: var(--padding-big);
+	border-bottom: var(--border-default);
 }
 
 footer section:first-of-type label {
-	font-size: 1em;
+	font-size: var(--font-size-default);
 	color: black;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 }
 
 footer section:first-of-type input {
 	border: none;
-	border-bottom: 1px solid rgb(245 245 245);
+	border-bottom: var(--border-default);
 	width: 100%;
 	height: 2em;
 	margin-bottom: 1em;
-	font-weight: 300;
+	font-weight: var(--font-weight-medium);
 	text-transform: uppercase;
 }
 
 footer section:first-of-type input::placeholder {
 	text-transform: uppercase;
 	display: inline-block;
-	font-size: 1em;
-	font-weight: 600;
+	font-size: var(--font-size-default);
+	font-weight: var(--font-weight-heavy);
 }
 
 footer section:first-of-type input:focus {
@@ -479,9 +497,9 @@ footer section:first-of-type input:focus {
 footer section:first-of-type button[type="submit"] {
 	background-color: black;
 	text-align: center;
-	padding-left: .625em;
-	padding-right: .625em;
-	font-size: 1em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
+	font-size: var(--font-size-default);
 	height: 2.5em;
 	width: 100%;
 	display: flex;
@@ -490,16 +508,16 @@ footer section:first-of-type button[type="submit"] {
 	color: white;
 	text-transform: uppercase;
 	border: none;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 }
 
 footer section:nth-of-type(2) {
-	border-bottom: 1px solid rgb(245 245 245);
+	border-bottom: var(--border-default);
 }
 
 footer section:nth-of-type(2) ul {
-	padding-left: .625em;
-	padding-right: .625em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -508,26 +526,26 @@ footer section:nth-of-type(2) ul {
 
 footer section:nth-of-type(2) ul li {
 	list-style: none;
-	padding: .625em 0;
+	padding: var(--padding-small) 0;
 
 }
 
 footer section:nth-of-type(2) ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 	color: black;
 }
 
 footer section:nth-of-type(3) p {
-	font-size: 1em;
+	font-size: var(--font-size-default);
 }
 
 footer section:nth-of-type(3) {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-right: .625em;
+	padding-right: var(--padding-small);
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
@@ -540,15 +558,15 @@ footer section:nth-of-type(3) {
 
 
 
-.tees main>ul {
+.tees main > ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100vw;
-	padding-left: .625em;
-	padding-right: .625em;
-	padding-top: .625em;
-	grid-gap: .625em;
-	border-bottom: 1px solid rgb(169, 167, 167);
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
+	padding-top: var(--padding-small);
+	grid-gap: var(--padding-small);
+	border-bottom: var(--border-default);
 }
 
 .tees main ul li {
@@ -566,15 +584,15 @@ footer section:nth-of-type(3) {
 }
 
 .tees main ul li a h3 {
-	font-size: 1em;
-	margin-right: .625em;
-	margin-top: .625em;
+	font-size: var(--font-size-default);
+	margin-right: var(--padding-small);
+	margin-top: var(--padding-small);
 	overflow-wrap: anywhere;
 }
 
 .tees main ul li a p {
 	margin-top: .125em;
-	margin-bottom: .625em;
+	margin-bottom: var(--padding-small);
 	display: inline-block;
 }
 
@@ -595,29 +613,27 @@ footer section:nth-of-type(3) {
 
 .tees main section:nth-of-type(2) form ul button {
 	width: 100%;
-	height: 3.75em;
+	height: var(--element-height);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: .625em;
-	padding-right: .625em;
-	font-size: 1em;
-	font-weight: 600;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
+	font-size: var(--font-size-default);
+	font-weight: var(--font-weight-heavy);
 	text-transform: uppercase;
 	background-color: transparent;
 	border: none;
-	border-top: 1px solid rgb(245 245 245);
+	border-top: var(--border-default);
 }
 
 .tees main section:nth-of-type(2) form ul button img {
-	height: .625em;
+	height: var(--padding-small);
 	transform: rotate(180deg);
-	transition: all .25s cubic-bezier(.215, .61, .355, 1);
+	transition: var(--transition-default);
 }
 
 .tees main section:nth-of-type(2) form ul li {
-	padding-left: .625em;
-	padding-bottom: 1.25em;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	line-height: 2em;
@@ -628,7 +644,12 @@ footer section:nth-of-type(3) {
 	accent-color: black;
 }
 
-.tees main section:nth-of-type(2) form ul li.closedLi {
+.tees main section:nth-of-type(2) form ul li div {
+	padding-left: var(--padding-small);
+	padding-bottom: var(--padding-small);
+}
+
+.tees main section:nth-of-type(2) form ul li div[aria-hidden=true]{
 	display: none;
 }
 
@@ -636,7 +657,7 @@ footer section:nth-of-type(3) {
 	transform: rotate(0deg);
 }
 
-.tees main section:nth-of-type(2).closedFilterMenu {
+.tees main section:nth-of-type(2)[aria-hidden="true"]{
 	display: none;
 }
 
@@ -656,10 +677,10 @@ footer section:nth-of-type(3) {
 	display: block;
 	margin: 0;
 	padding: 0;
-	height: 3.75em;
+	height: var(--element-height);
 	border: 1px solid black;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 }
 
 .tees main section:nth-of-type(2) form section button:first-of-type {
@@ -673,7 +694,7 @@ footer section:nth-of-type(3) {
 }
 
 body.tees main section:first-of-type {
-	border-bottom: 1px solid rgb(245 245 245);
+	border-bottom: var(--border-default);
 }
 
 body.tees main section:first-of-type.filterOpen {
@@ -698,9 +719,9 @@ body.tees main section:first-of-type.filterOpen {
 
 .shirt main section:first-of-type button {
 	width: 100%;
-	height: 3.75em;
+	height: var(--element-height);
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 	border: 1px solid black;
 }
 
@@ -716,44 +737,44 @@ body.tees main section:first-of-type.filterOpen {
 
 .shirt main section:nth-of-type(2) {
 	text-transform: uppercase;
-	padding-left: .625em;
-	padding-right: .625em;
+	padding-left: var(--padding-small);
+	padding-right: var(--padding-small);
 	height: fit-content;
 }
 
 .shirt main section:nth-of-type(2) h2 {
-	font-weight: 600;
-	padding-top: .625em;
+	font-weight: var(--font-weight-heavy);
+	padding-top: var(--padding-small);
 }
 
-.shirt main section:nth-of-type(2)>p:first-of-type {
-	font-weight: 100;
-	border-bottom: 1px solid rgb(177, 177, 177);
-	padding-bottom: 1.25em;
+.shirt main section:nth-of-type(2) > p:first-of-type {
+	font-weight: var(--font-weight-thin);
+	border-bottom: var(--border-default);
+	padding-bottom: var(--padding-big);
 }
 
-.shirt main section:nth-of-type(2)>p:nth-of-type(2) {
-	font-weight: 600;
-	padding-top: 1.25em;
+.shirt main section:nth-of-type(2) > p:nth-of-type(2) {
+	font-weight: var(--font-weight-heavy);
+	padding-top: var(--padding-big);
 	color: grey;
-	padding-bottom: .625em;
+	padding-bottom: var(--padding-small);
 }
 
-.shirt main section:nth-of-type(2)>ul:first-of-type {
+.shirt main section:nth-of-type(2) > ul:first-of-type {
 	display: flex;
-	gap: .625em;
-	padding-bottom: 1.25em;
-	border-bottom: 1px solid rgb(177, 177, 177);
+	gap: var(--padding-small);
+	padding-bottom: var(--padding-big);
+	border-bottom: var(--border-default);
 }
 
-.shirt main section:nth-of-type(2)>ul:first-of-type li {
+.shirt main section:nth-of-type(2) > ul:first-of-type li {
 	height: 2.5em;
 	width: 2.5em;
 	display: block;
 	background-color: rgb(240, 240, 240);
 }
 
-.shirt main section:nth-of-type(2)>ul:first-of-type li a {
+.shirt main section:nth-of-type(2) > ul:first-of-type li a {
 	display: flex;
 	width: 100%;
 	height: 100%;
@@ -761,14 +782,14 @@ body.tees main section:first-of-type.filterOpen {
 	align-items: center;
 }
 
-.shirt main section:nth-of-type(2)>ul:first-of-type li a img {
+.shirt main section:nth-of-type(2) > ul:first-of-type li a img {
 	height: 100%;
 }
 
 .shirt main section:nth-of-type(2) form {
-	padding-top: 1.25em;
-	padding-bottom: 1.25em;
-	border-bottom: 1px solid rgb(177, 177, 177);
+	padding-top: var(--padding-big);
+	padding-bottom: var(--padding-big);
+	border-bottom: var(--border-default);
 }
 
 .shirt main section:nth-of-type(2) form input {
@@ -776,78 +797,86 @@ body.tees main section:first-of-type.filterOpen {
 }
 
 .shirt main section:nth-of-type(2) form label {
-	padding-right: .625em;
+	padding-right: var(--padding-small);
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2) {
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) {
 	text-transform: none;
+	list-style: none;
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2) button {
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) li button {
 	width: 100%;
-	height: 3.75em;
+	height: var(--element-height);
 	display: flex;
-	gap: .625em;
+	gap: var(--padding-small);
 	align-items: center;
 	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 1em;
+	font-weight: var(--font-weight-heavy);
+	font-size: var(--font-size-default);
 	border: none;
 	background-color: transparent;
-	border-top: 1px solid rgb(168, 168, 168);
+	border-top: var(--border-default);
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2) button img {
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) button img {
 	transform: rotate(270deg);
 	height: .75em;
-	transition: all .25s cubic-bezier(.215, .61, .355, 1);
+	transition: var(--transition-default);
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2) button.activeInfoText {
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) li button.activeInfoText {
 	text-decoration: underline;
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2) button img.activeInfoImg {
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) li button img.activeInfoImg {
 	transform: rotate(360deg);
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li {
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) > li div {
 	list-style: none;
 	display: none;
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li.activeInfo {
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) > li:nth-of-type(3) div p {
+	margin-bottom: var(--padding-big);
+}
+
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) > li div.activeInfo {
 	display: block;
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li ul {
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) > li div ul {
 	list-style-type: '- ';
-	padding-left: 1.25em;
-	padding-top: 1.25em;
-	padding-bottom: 1.25em;
+	padding-left: var(--padding-big);
+	padding-top: var(--padding-big);
+	padding-bottom: var(--padding-big);
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>a {
-	height: 3.75em;
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) > li:nth-of-type(2) > div > img {
+	width: 100%;
+}
+
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) > li a {
+	height: var(--element-height);
 	display: flex;
 	width: 100%;
 	align-items: center;
-	font-style: none;
 	color: black;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 	text-transform: uppercase;
 	justify-content: flex-start;
-	border-top: 1px solid rgb(168, 168, 168);
+	border-top: var(--border-default);
 }
 
 .shirt main p:nth-of-type(3) {
-	padding-top: 1.25em;
-	padding-bottom: 1.25em;
+	padding-top: var(--padding-big);
+	padding-bottom: var(--padding-big);
 }
 
-.shirt main section:nth-of-type(2)>ul:nth-of-type(2)>li:last-of-type p {
-	padding-bottom: 1.25em;
+.shirt main section:nth-of-type(2) > ul:nth-of-type(2) > li:last-of-type p {
+	padding-bottom: var(--padding-big);
 }
 
 .shirt main section:nth-of-type(3) {
@@ -858,9 +887,9 @@ body.tees main section:first-of-type.filterOpen {
 
 .shirt main section:nth-of-type(3) button {
 	width: 50%;
-	height: 3.75em;
+	height: var(--element-height);
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: var(--font-weight-heavy);
 	border: 1px solid black;
 }
 
@@ -879,15 +908,7 @@ body.tees main section:first-of-type.filterOpen {
 }
 
 .shirt main table th, .shirt main table td {
-	padding-right: 1.25em;
-}
-
-.shirt main section:nth-of-type(2) ul li:nth-of-type(2) img {
-	width: 100%;
-	padding-top: 1.25em;
-	padding-bottom: 1.25em;
-	padding-left: .625em;
-	padding-right: .625em;
+	padding-right: var(--padding-big);
 }
 
 @media only screen and (min-width: 600px) {
@@ -910,21 +931,22 @@ body.tees main section:first-of-type.filterOpen {
 		grid-column-start: 2;
 		grid-column-end: 3;
 		position: static;
-		padding-left: .625em;
-		padding-right: .625em;
+		padding-left: var(--padding-small);
+		padding-right: var(--padding-small);
 		align-self: flex-end;
 	}
 
-	.shirt main section:nth-of-type(2) ul li:nth-of-type(2) img {
+	.shirt main section:nth-of-type(2) > ul:nth-of-type(2) > li:nth-of-type(2) > div > img {
 		width: 50%;
 	}
-	.tees main>ul {
+
+	.tees main > ul {
 	grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
 @media only screen and (min-width: 900px) {
-	.tees main>ul {
+	.tees main > ul {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		}
 }
